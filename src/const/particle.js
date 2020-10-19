@@ -1,20 +1,20 @@
 const particles = {
     "particles": {
        "number": {
-         "value": 130,
+         "value": 95,
          "density": {
            "enable": true,
            "value_area": 800
          }
        },
        "color": {
-         "value": "#ffffff"
+         "value": "#393e46"
        },
        "shape": {
          "type": "circle",
          "stroke": {
            "width": 3,
-           "color": "#000000"
+           "color": "#393e46"
          },
          "polygon": {
            "nb_sides": 5
@@ -48,7 +48,7 @@ const particles = {
        "line_linked": {
          "enable": true,
          "distance": 150,
-         "color": "#ffffff",
+         "color": "#00adb5",
          "opacity": 0.4,
          "width": 1
        },
@@ -73,10 +73,6 @@ const particles = {
          "onhover": {
            "enable": true,
            "mode": "grab"
-         },
-         "onclick": {
-           "enable": true,
-           "mode": "push"
          },
          "resize": true
        },

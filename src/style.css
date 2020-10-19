@@ -39,7 +39,8 @@ a:hover {
 }
 
 .profile-image {
-  border-radius: 50px;
+  border-radius: 500px;
+  margin-bottom: 50px;
 }
 
 .btn {

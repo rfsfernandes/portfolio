@@ -3,8 +3,15 @@ import "./stars.scss";
 import Typed from "react-typed";
 import Particles from "react-particles-js";
 import particles from "../const/particle";
+import logo1 from "../img/profile.png";
 
 class Intro extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      logo: logo1
+    };
+  }
   render() {
     return (
       <div>
@@ -13,6 +20,14 @@ class Intro extends React.Component {
           <div className="intro-content display-table">
             <div className="table-cell">
               <div className="container">
+                <a className="navbar-brand js-scroll" href="#page-top">
+            <img
+            className="profile-image"
+              src={this.state.logo}
+              alt="logo"
+              style={{ maxWidth: "400px" }}
+            />
+          </a>
                 <h1 className="intro-title mb-4">Rodrigo Fernandes</h1>
                 <p className="intro-subtitle">
                   <span className="text-slider-items"></span>
