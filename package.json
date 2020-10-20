@@ -2,8 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shloksomani.github.io/react-portfolio/",
+  "homepage": "https://rfsfernandes.github.io/portfolio/",
   "dependencies": {
+    "-": "0.0.1",
     "bootstrap": "^4.3.1",
     "file-system": "^2.2.2",
     "gh-pages": "^2.2.0",
@@ -19,6 +20,7 @@
     "react-particles-js": "^3.3.0",
     "react-scripts": "^3.4.3",
     "react-typed": "^1.1.2",
+    "save-dev": "0.0.1-security",
     "typed.js": "^2.0.10"
   },
   "scripts": {
