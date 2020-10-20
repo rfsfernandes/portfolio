@@ -1,25 +1,48 @@
 import React from "react";
-import myImage from "../img/myImage.png";
 
 class About extends React.Component {
   constructor() {
     super();
     this.state = {
       skills: [
-        { id: "HTML5_skill", content: "HTML5", porcentage: "80%", value: "80" },
-        { id: "CSS3_skill", content: "CSS3", porcentage: "70%", value: "70" },
+        {
+          id: "Android_skill",
+          content: "Android",
+          porcentage: "95%",
+          value: "95"
+        },
         {
           id: "Java_skill",
           content: "Java",
           porcentage: "95%",
           value: "95"
         },
+        { id: "HTML5_skill", content: "HTML5", porcentage: "80%", value: "80" },
+        { id: "CSS3_skill", content: "CSS3", porcentage: "75%", value: "75" },
         { id: "PHP_skill", content: "PHP", porcentage: "70%", value: "70" },
+        {
+          id: "Javascript_skill",
+          content: "Javascript",
+          porcentage: "73%",
+          value: "73"
+        },
         {
           id: "ReactJS_skill",
           content: "ReactJS",
           porcentage: "75%",
           value: "75"
+        },
+        {
+          id: "Sql_skill",
+          content: "SQL",
+          porcentage: "70%",
+          value: "70"
+        },
+        {
+          id: "MongoDB_skill",
+          content: "MongoDB",
+          porcentage: "60%",
+          value: "60"
         },
         {
           id: "Wordpress_skill",
@@ -84,7 +107,7 @@ class About extends React.Component {
                       </div>
                     </div>
                     <div className="skill-mf">
-                      {/* <p className="title-s">Skill</p> */}
+                      {/* <p className="title-s">Skills</p> */}
                       {this.state.skills.map(skill => {
                         return (
                           <React.Fragment key={skill.id}>
