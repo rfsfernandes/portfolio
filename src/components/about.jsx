@@ -62,7 +62,7 @@ class About extends React.Component {
           id: "second-p-about",
           content:
             "I'm a very organized person. I like to keep my code, my files and my directories, organized so I don't lose track of what I'm doing or "
-            + "where is the information I need for my work. I always go for the same work tree in every project I do. The same goes for my desktop, I" + 
+            + "where is the information I need for my work. I always go for the same work tree in every project I do. The same goes for my desktop, I " + 
             "need to keep it clean. It must be clean. I'm a perfectionist."
         },
         {
