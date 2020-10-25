@@ -83,7 +83,6 @@ const descriptions = {
     <div>
       <p>This project was created by me.</p>
       <p>
-        {" "}
         It was ment to keep track of the evolution of the Covid19 pandemic. I
         used an open source API.
       </p>
