@@ -1,35 +1,47 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fcfae4a0cd40b175eed6d6ab65132db4",
+    "revision": "7891adc305f7552876f89108a2bf9af7",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "6ab17aee4a302110419e",
+    "revision": "9f6bba7a98b98dac0a83",
     "url": "/portfolio/static/css/2.9f99e50b.chunk.css"
   },
   {
-    "revision": "e33a5257b8946790a9f5",
-    "url": "/portfolio/static/css/main.322b01b7.chunk.css"
+    "revision": "b332b2ce49550558a3a8",
+    "url": "/portfolio/static/css/main.7db9d884.chunk.css"
   },
   {
-    "revision": "6ab17aee4a302110419e",
-    "url": "/portfolio/static/js/2.2160f0de.chunk.js"
+    "revision": "9f6bba7a98b98dac0a83",
+    "url": "/portfolio/static/js/2.ea0533f5.chunk.js"
   },
   {
-    "revision": "1a0968dc243fc785d05284e154e37292",
-    "url": "/portfolio/static/js/2.2160f0de.chunk.js.LICENSE.txt"
+    "revision": "91734f27035e5071a0e9ba2b2a51d403",
+    "url": "/portfolio/static/js/2.ea0533f5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e33a5257b8946790a9f5",
-    "url": "/portfolio/static/js/main.4792eb6a.chunk.js"
+    "revision": "b332b2ce49550558a3a8",
+    "url": "/portfolio/static/js/main.e6cfa019.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
     "url": "/portfolio/static/js/runtime-main.209c2d7e.js"
   },
   {
+    "revision": "58b2704eb96f3467b21a71f695370095",
+    "url": "/portfolio/static/media/continente.58b2704e.jpg"
+  },
+  {
+    "revision": "0487be805d1dd2469cb84e1925627e67",
+    "url": "/portfolio/static/media/digitalworks.0487be80.png"
+  },
+  {
     "revision": "23e23ef2a668e6a0a8e46a035234c761",
     "url": "/portfolio/static/media/earth-2.23e23ef2.jpg"
+  },
+  {
+    "revision": "653d0179acd4fd02692931581d89d89a",
+    "url": "/portfolio/static/media/eventphotography.653d0179.png"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
@@ -68,7 +80,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/ionicons.621bd386.svg"
   },
   {
+    "revision": "20e64aecf22b430f7bd09b27ea5f9a05",
+    "url": "/portfolio/static/media/ipb.20e64aec.png"
+  },
+  {
     "revision": "3d3484b6fa3feb729b897581fadd9ed1",
     "url": "/portfolio/static/media/profile.3d3484b6.png"
+  },
+  {
+    "revision": "06c70ab049aa826ece96236f69c78144",
+    "url": "/portfolio/static/media/udemy.06c70ab0.png"
   }
 ]);
