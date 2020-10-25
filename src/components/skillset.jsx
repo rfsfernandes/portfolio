@@ -1,6 +1,6 @@
 import React from "react";
 
-class About extends React.Component {
+class SkillSet extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -51,33 +51,6 @@ class About extends React.Component {
           value: "60",
         },
       ],
-      about_me: [
-        {
-          id: "first-p-about",
-          content:
-            "I consider myself an endless learner: I love learning and I will always be learning. That's the life of a programmer, right? " +
-            "You never stop learning. And if you do... it's the end!",
-        },
-        {
-          id: "second-p-about",
-          content:
-            "I'm a very organized person. I like to keep my code, my files and my directories, organized so I don't lose track of what I'm doing or " +
-            "where is the information I need for my work. I always go for the same work tree in every project I do. The same goes for my desktop, I " +
-            "need to keep it clean. It must be clean. I'm a perfectionist.",
-        },
-        {
-          id: "third-p-about",
-          content:
-            "As a programmer, I like to face the challenge, those are the one that keep me going. They keep me alive. Because of that, I became very devoted " +
-            "and I always give my whole to what I do, to what I'm developing, in order to reach both visual perfection and overall performance.",
-        },
-        {
-          id: "fourth-p-about",
-          content:
-            "I have a very good way of seeing things and imagine them in my head, a good perspective of things. That gives me the power to determine the best way (for me at least) to solve " +
-            "problems and aim for what is more important and be objective.",
-        },
-      ],
     };
   }
 
@@ -89,18 +62,47 @@ class About extends React.Component {
             <div className="col-sm-12">
               <div className="box-shadow-full">
                 <div className="row">
-                  <div className="col-md-12">
-                    <div className="about-me pt-4 pt-md-0">
+                  <div className="col-md-12" style={{ textAling: "center" }}>
+                    <div className="row">
+                      <div
+                        className="col-sm-12 col-md-12"
+                        style={{ margin: "0 auto" }}
+                      >
+                        <div
+                          className="about-img"
+                          style={{ textAlign: "center" }}
+                        >
+                          <img
+                            className="img-fluid rounded b-shadow-a"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="skill-mf">
                       <div className="title-box-2">
                         <h5 className="title-left">
-                          Hello, I'm <span class="about_span">Rodrigo</span>.
+                          My <span class="about_span">Skillset</span>.
                         </h5>
                       </div>
-                      {this.state.about_me.map((content) => {
+                      {this.state.skills.map((skill) => {
                         return (
-                          <p className="lead" key={content.id}>
-                            {content.content}
-                          </p>
+                          <React.Fragment key={skill.id}>
+                            <span>{skill.content}</span>{" "}
+                            <span className="pull-right">
+                              {skill.porcentage}
+                            </span>
+                            <div className="progress">
+                              <div
+                                className="progress-bar"
+                                role="progressbar"
+                                style={{ width: skill.porcentage }}
+                                aria-valuenow={skill.value}
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </React.Fragment>
                         );
                       })}
                     </div>
@@ -115,4 +117,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default SkillSet;

@@ -10,7 +10,7 @@ function PortfolioItem(props) {
   }
 
   return (
-    <div className="col-md-4">
+    <div className="col-md-6">
       <div className="work-box">
         <a
           href={directory + props.filename + ".png"}
@@ -21,17 +21,21 @@ function PortfolioItem(props) {
               src={directory + props.filename + ".png"}
               alt=""
               className="img-fluid"
+              style={{width: "100%"}}
             />
           </div>
           <div className="work-content">
             <div className="row">
-              <div className="col-sm-8">
+              <div className="col-sm-10">
                 <h2 className="w-title">{props.title}</h2>
+                <div className="w-more">
+                  <span className="w-cdescription">{props.description}</span>
+                </div>
                 <div className="w-more">
                   <span className="w-ctegory">{props.text}</span>
                 </div>
               </div>
-              <div className="col-sm-4">
+              <div className="col-sm-2">
                 <div className="w-like">
                   <span className="ion-ios-plus-outline"></span>
                 </div>
