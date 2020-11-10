@@ -55,27 +55,28 @@ class About extends React.Component {
         {
           id: "first-p-about",
           content:
-            "I consider myself an endless learner: I love learning and I will always be learning. That's the life of a programmer, right? " +
-            "You never stop learning. And if you do... it's the end!",
+            "I consider myself a very professional and organized person. I like to keep my desk organized and clean, so there is no distraction possible. Therefore, so are my code and my projects. This way I can more easily follow what I am developing.",
         },
         {
           id: "second-p-about",
           content:
-            "I'm a very organized person. I like to keep my code, my files and my directories, organized so I don't lose track of what I'm doing or " +
-            "where is the information I need for my work. I always go for the same work tree in every project I do. The same goes for my desktop, I " +
-            "need to keep it clean. It must be clean. I'm a perfectionist.",
+            "I like to maintain consistency, so all my current projects always follow the same template, in terms of structure, created by me. In addition to this, I always try to be as efficient as possible, so I became very proficient on my time management.",
         },
         {
           id: "third-p-about",
           content:
-            "As a programmer, I like to face the challenge, those are the one that keep me going. They keep me alive. Because of that, I became very devoted " +
-            "and I always give my whole to what I do, to what I'm developing, in order to reach both visual perfection and overall performance.",
+            "Throughout my academic and professional I managed to improve and perfect my teamwork , because without a team everything is much more boring and much more difficult. Teamwork is fundamental and a priority. I always try to help my teammates, just as I" +
+            " also ask for help when I have more difficulties. The entire development process has to be carried out with enormous mutual assistance between the team members.",
         },
         {
           id: "fourth-p-about",
           content:
-            "I have a very good way of seeing things and imagine them in my head, a good perspective of things. That gives me the power to determine the best way (for me at least) to solve " +
-            "problems and aim for what is more important and be objective.",
+            "As a very dedicated person and committed to everything I do, I am also perfectionist and demanding with myself. I consider myself an endless learner: I love learning and I will always be learning. That's the life of a programmer, right? You never stop learning. And if you do... it's the end!",
+        },
+        {
+          id: "five-p-about",
+          content:
+            "I have a very objective attitude, which leads me to solve problems relatively quickly and focus on priorities. I have always liked challenges and, therefore, I have developed a good problem-solving capacity, be they professional or personal.",
         },
       ],
     };
