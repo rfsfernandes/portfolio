@@ -1,6 +1,6 @@
 import React from "react";
 import PortfolioItem from "./portfolio_item.jsx";
-
+const pdf = process.env.PUBLIC_URL + "/pdf/cv.pdf";
 const descriptions = {
   NaturalPTrails: (
     <div>
@@ -166,6 +166,7 @@ class Portfolio extends React.Component {
               isExtended={false}
               description={descriptions.FullStack}
             />
+            
           </div>
         </div>
       </section>

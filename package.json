@@ -20,9 +20,11 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-particles-js": "^3.3.0",
+    "react-pdf": "^5.0.0",
     "react-scripts": "^3.4.4",
     "react-typed": "^1.1.2",
     "save-dev": "0.0.1-security",
+    "simple-react-lightbox": "^3.3.4-2",
     "typed.js": "^2.0.10"
   },
   "scripts": {

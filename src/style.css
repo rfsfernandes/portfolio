@@ -43,6 +43,61 @@ a:hover {
   margin-bottom: 50px;
 }
 
+.pdf-lightbox {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.59);
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdf-card-lightbox {
+  width: 80%;
+  margin: auto;
+  padding: 50px;
+}
+
+.pdf-doc-container {
+  margin: auto;
+  text-align: center;
+  height: 90%;
+}
+.react-pdf__Page__annotations {
+  height: 0px;
+}
+.annotationLayer  {
+  height: 0px;
+}
+
+.react-pdf__Page__canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.pdf-doc {
+  width: 100%;
+  margin: auto;
+}
+
+.react-pdf__Document {
+  height: 100%;
+  width: 60%;
+}
+
+.MuiPagination-ul {
+  margin: auto !important;
+  width: 230px !important;
+}
+
+.pdf-pagination {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
 .btn {
   border: none !important;
   background-color: #00adb5 !important;
@@ -690,6 +745,7 @@ ABOUT
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  border-radius: 5px;
 }
 
 .about-mf .about-img {
@@ -730,6 +786,7 @@ PORTFOLIO
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
+  border-radius: 5px;
 }
 
 .work-box:hover img {
@@ -946,6 +1003,9 @@ BUTTON
 }
 
 @media (min-width: 767px) {
+  canvas {
+  }
+
   .about-mf .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
