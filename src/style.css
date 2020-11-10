@@ -87,6 +87,12 @@ a:hover {
   width: 60%;
 }
 
+@media (min-width: 767px) {
+  .react-pdf__Document {
+    width: 60%;
+  }
+}
+
 .MuiPagination-ul {
   margin: auto !important;
   width: 230px !important;

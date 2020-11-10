@@ -15,7 +15,7 @@ class Intro extends React.Component {
   render() {
     return (
       <div>
-        {/* <Particles params={particles} className="particle" /> */}
+        <Particles params={particles} className="particle" />
         <div id="home" className="intro route bg-image">
           <div className="intro-content display-table">
             <div className="table-cell">
