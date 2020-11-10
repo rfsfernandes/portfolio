@@ -31,26 +31,32 @@ function CV() {
                         My Curriculum <span class="about_span">Vitae</span>.
                       </h5>
                     </div>
+                    
+                    
                     <a href={pdf} target="_blank">
-                    <div className="pdf-doc-container" >
-                      <Document
-                        className="pdf-doc"
-                        file={pdf}
-                        onLoadSuccess={onDocumentLoadSuccess}
-                      >
-                        <Page pageNumber={pageNumber} />
-                      </Document>
-                      
-                    </div>
-                    </a>
-                    <div>
-                        <Pagination
-                          className="pdf-pagination"
-                          count={numPages}
-                          shape="rounded"
-                          onChange={handleChange}
-                        />
+                      <div className="pdf-doc-container">
+                        <Document
+                          className="pdf-doc"
+                          file={pdf}
+                          onLoadSuccess={onDocumentLoadSuccess}
+                        >
+                          <Page pageNumber={pageNumber} />
+                        </Document>
                       </div>
+                    </a>
+                    <div style={{width: "100%", textAlign: "center", marginTop: "35px"}}> 
+                      <p className="lead">
+                        (Click the document to view in detail)
+                      </p>
+                    </div>
+                    <div>
+                      <Pagination
+                        className="pdf-pagination"
+                        count={numPages}
+                        shape="rounded"
+                        onChange={handleChange}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
