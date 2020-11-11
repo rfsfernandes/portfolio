@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 //import components
 import Navbar from "./navbar.jsx";
 import Intro from "./intro.jsx";
@@ -12,44 +12,46 @@ import AcademicPath from "./academic_path";
 import SkillSet from "./skillset";
 import CV from "./cv";
 
+import Particles from "react-particles-js";
+import particles from "../const/particle";
 function App() {
   let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
+  let ca = decodedCookie.split(";");
   let languageCookie = "PT";
 
-  ca.forEach(cookie => {
-    if(cookie.includes("language")) {
-      languageCookie = cookie.substring(cookie.indexOf("=") + 1, cookie.length)
+  ca.forEach((cookie) => {
+    if (cookie.includes("language")) {
+      languageCookie = cookie.substring(cookie.indexOf("=") + 1, cookie.length);
     }
   });
 
   console.log(languageCookie);
-  const [language, setLanguage] = useState( languageCookie )
+  const [language, setLanguage] = useState(languageCookie);
 
-  function languageChange(newLanguage){
-    if(newLanguage == "EN") {
+  function languageChange(newLanguage) {
+    if (newLanguage == "EN") {
       document.cookie = "language=EN; path=/";
     } else {
       document.cookie = "language=PT; path=/";
     }
-    
-    setLanguage(newLanguage)
+
+    setLanguage(newLanguage);
   }
 
   return (
-    
     <div>
-      <BackToTop />
-      <Navbar callback={languageChange} language={language}/>
+      <Particles params={particles} className="particle" />
+      <Navbar callback={languageChange} language={language} />
       <Intro language={language} />
-      <About language={language}/>
-      <SkillSet language={language}/>
-      <AcademicPath language={language}/>
-      <ProfessionalPath language={language}/>
+      <About language={language} />
+      <SkillSet language={language} />
+      <AcademicPath language={language} />
+      <ProfessionalPath language={language} />
       <Portfolio language={language} />
-      <CV language={language}/>
+      <CV language={language} />
       <Contact language={language} />
       <Preloader />
+      <BackToTop />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import PortfolioItem from "./portfolio_item.jsx";
-
+import Slide from "@material-ui/core/Slide";
 const descriptionsEN = {
   NaturalPTrails: (
     <div>
@@ -224,67 +224,69 @@ class Portfolio extends React.Component {
     const descriptions = language == "EN" ? descriptionsEN : descriptionsPT;
     return (
       <section id="work" className="portfolio-mf sect-pt4 route">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="title-box text-center">
-                <h3 className="title-a">
-                  {language == "EN"
-                    ? "Some projects I worked on"
-                    : "Alguns projetos em que trabalhei"}
-                </h3>
-                <p className="subtitle-a">
-                  {language == "EN"
-                    ? "This projects were made wether in a professional contex, University or by my own."
-                    : "Estes projetos foram realizados em contexto profissional, Universitário ou por conta própria."}
-                </p>
-                <div className="line-mf"></div>
+        <Slide in {...{ timeout: 4000 }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12">
+                <div className="title-box text-center">
+                  <h3 className="title-a">
+                    {language == "EN"
+                      ? "Some projects I worked on"
+                      : "Alguns projetos em que trabalhei"}
+                  </h3>
+                  <p className="subtitle-a">
+                    {language == "EN"
+                      ? "This projects were made wether in a professional contex, University or by my own."
+                      : "Estes projetos foram realizados em contexto profissional, Universitário ou por conta própria."}
+                  </p>
+                  <div className="line-mf"></div>
+                </div>
               </div>
             </div>
+            <div className="row">
+              <PortfolioItem
+                directory="/img/icnf/"
+                filename="icnf"
+                title="NaturalPTrails"
+                text="Android | Java"
+                isExtended={true}
+                description={descriptions.NaturalPTrails}
+              />
+              <PortfolioItem
+                directory="/img/myticket/"
+                filename="myticket"
+                title="My Ticket"
+                text="Android | Java"
+                isExtended={false}
+                description={descriptions.Myticket}
+              />
+              <PortfolioItem
+                directory="/img/pescapanha/"
+                filename="pescapanha"
+                title="PescApanha"
+                text="Android | Java"
+                isExtended={false}
+                description={descriptions.PescApanha}
+              />
+              <PortfolioItem
+                directory="/img/covid2day/"
+                filename="covid2day"
+                title="Covid2Day"
+                text="Android | Java"
+                isExtended={true}
+                description={descriptions.Covid2Day}
+              />
+              <PortfolioItem
+                directory="/img/fullstackchallenge/"
+                filename="fullstackchallenge"
+                title="Full Stack Challenge"
+                text="MongoDB | ExpressJS | ReactJS | NodeJS"
+                isExtended={false}
+                description={descriptions.FullStack}
+              />
+            </div>
           </div>
-          <div className="row">
-            <PortfolioItem
-              directory="/img/icnf/"
-              filename="icnf"
-              title="NaturalPTrails"
-              text="Android | Java"
-              isExtended={true}
-              description={descriptions.NaturalPTrails}
-            />
-            <PortfolioItem
-              directory="/img/myticket/"
-              filename="myticket"
-              title="My Ticket"
-              text="Android | Java"
-              isExtended={false}
-              description={descriptions.Myticket}
-            />
-            <PortfolioItem
-              directory="/img/pescapanha/"
-              filename="pescapanha"
-              title="PescApanha"
-              text="Android | Java"
-              isExtended={false}
-              description={descriptions.PescApanha}
-            />
-            <PortfolioItem
-              directory="/img/covid2day/"
-              filename="covid2day"
-              title="Covid2Day"
-              text="Android | Java"
-              isExtended={true}
-              description={descriptions.Covid2Day}
-            />
-            <PortfolioItem
-              directory="/img/fullstackchallenge/"
-              filename="fullstackchallenge"
-              title="Full Stack Challenge"
-              text="MongoDB | ExpressJS | ReactJS | NodeJS"
-              isExtended={false}
-              description={descriptions.FullStack}
-            />
-          </div>
-        </div>
+        </Slide>
       </section>
     );
   }

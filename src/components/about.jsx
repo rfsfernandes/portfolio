@@ -1,5 +1,5 @@
 import React from "react";
-
+import Slide from "@material-ui/core/Slide";
 class About extends React.Component {
   constructor() {
     super();
@@ -114,40 +114,43 @@ class About extends React.Component {
     const {language} = this.props
     return (
       <section id="about" className="about-mf sect-pt4 route">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="box-shadow-full">
-                <div className="row">
-                  <div className="col-md-12">
-                    <div className="about-me pt-4 pt-md-0">
-                      <div className="title-box-2">
-                        <h5 className="title-left">
-                          {language == "EN" ? "Hello, I'm " : "Olá, sou o "}<span className="about_span">Rodrigo</span>.
-                        </h5>
+        <Slide in {...{ timeout: 2000 }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12">
+                <div className="box-shadow-full">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <div className="about-me pt-4 pt-md-0">
+                        <div className="title-box-2">
+                          <h5 className="title-left">
+                            {language == "EN" ? "Hello, I'm " : "Olá, sou o "}
+                            <span className="about_span">Rodrigo</span>.
+                          </h5>
+                        </div>
+                        {language == "EN"
+                          ? this.state.about_meEN.map((content) => {
+                              return (
+                                <p className="lead" key={content.id}>
+                                  {content.content}
+                                </p>
+                              );
+                            })
+                          : this.state.about_mePT.map((content) => {
+                              return (
+                                <p className="lead" key={content.id}>
+                                  {content.content}
+                                </p>
+                              );
+                            })}
                       </div>
-                      {language == "EN" ? this.state.about_meEN.map((content) => {
-                        return (
-                          <p className="lead" key={content.id}>
-                            {content.content}
-                          </p>
-                        );
-                      }) 
-                    :
-                    this.state.about_mePT.map((content) => {
-                      return (
-                        <p className="lead" key={content.id}>
-                          {content.content}
-                        </p>
-                      );
-                    })}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </Slide>
       </section>
     );
   }

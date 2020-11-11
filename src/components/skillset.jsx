@@ -1,5 +1,5 @@
 import React from "react";
-
+import Slide from "@material-ui/core/Slide";
 class SkillSet extends React.Component {
   constructor() {
     super();
@@ -58,65 +58,67 @@ class SkillSet extends React.Component {
     const { language } = this.props;
     return (
       <section id="about" className="about-mf sect-pt4 route">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="box-shadow-full">
-                <div className="row">
-                  <div className="col-md-12" style={{ textAling: "center" }}>
-                    <div className="row">
-                      <div
-                        className="col-sm-12 col-md-12"
-                        style={{ margin: "0 auto" }}
-                      >
+        <Slide in {...{ timeout: 2500 }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12">
+                <div className="box-shadow-full">
+                  <div className="row">
+                    <div className="col-md-12" style={{ textAling: "center" }}>
+                      <div className="row">
                         <div
-                          className="about-img"
-                          style={{ textAlign: "center" }}
+                          className="col-sm-12 col-md-12"
+                          style={{ margin: "0 auto" }}
                         >
-                          <img
-                            className="img-fluid rounded b-shadow-a"
-                            alt=""
-                          />
+                          <div
+                            className="about-img"
+                            style={{ textAlign: "center" }}
+                          >
+                            <img
+                              className="img-fluid rounded b-shadow-a"
+                              alt=""
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="skill-mf">
-                      <div className="title-box-2">
-                        <h5 className="title-left">
-                          {language == "EN" ? "My " : "O meu conjunto de "}
-                          <span className="about_span">
-                            {language == "EN" ? "Skillset" : "habilidade"}
-                          </span>
-                          .
-                        </h5>
-                      </div>
-                      {this.state.skills.map((skill) => {
-                        return (
-                          <React.Fragment key={skill.id}>
-                            <span>{skill.content}</span>{" "}
-                            <span className="pull-right">
-                              {skill.porcentage}
+                      <div className="skill-mf">
+                        <div className="title-box-2">
+                          <h5 className="title-left">
+                            {language == "EN" ? "My " : "O meu conjunto de "}
+                            <span className="about_span">
+                              {language == "EN" ? "Skillset" : "Habilidades"}
                             </span>
-                            <div className="progress">
-                              <div
-                                className="progress-bar"
-                                role="progressbar"
-                                style={{ width: skill.porcentage }}
-                                aria-valuenow={skill.value}
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              ></div>
-                            </div>
-                          </React.Fragment>
-                        );
-                      })}
+                            .
+                          </h5>
+                        </div>
+                        {this.state.skills.map((skill) => {
+                          return (
+                            <React.Fragment key={skill.id}>
+                              <span>{skill.content}</span>{" "}
+                              <span className="pull-right">
+                                {skill.porcentage}
+                              </span>
+                              <div className="progress">
+                                <div
+                                  className="progress-bar"
+                                  role="progressbar"
+                                  style={{ width: skill.porcentage }}
+                                  aria-valuenow={skill.value}
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                ></div>
+                              </div>
+                            </React.Fragment>
+                          );
+                        })}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </Slide>
       </section>
     );
   }

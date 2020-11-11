@@ -56,10 +56,6 @@ a:hover {
   margin-bottom: 50px;
 }
 
-.container {
-  width: 50% !important;
-}
-
 .pdf-lightbox {
   height: 100%;
   width: 100%;
@@ -108,6 +104,7 @@ a:hover {
   .react-pdf__Document {
     width: 60%;
   }
+
 }
 
 .MuiPagination-ul {
@@ -1025,8 +1022,6 @@ BUTTON
 }
 
 @media (min-width: 767px) {
-  canvas {
-  }
 
   .about-mf .box-pl2 {
     margin-top: 3rem;
@@ -1110,6 +1105,7 @@ BUTTON
 
 @media (max-width: 768px) {
   .back-to-top {
+    right: 10px;
     bottom: 15px;
   }
 }
