@@ -13,9 +13,18 @@ import SkillSet from "./skillset";
 import CV from "./cv";
 
 function App() {
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  const [language, setLanguage] = useState(ca[1].substring(ca[1].indexOf("=") + 1, ca[1].length))
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  let languageCookie = "PT";
+
+  ca.forEach(cookie => {
+    if(cookie.includes("language")) {
+      languageCookie = cookie.substring(cookie.indexOf("=") + 1, cookie.length)
+    }
+  });
+
+  console.log(languageCookie);
+  const [language, setLanguage] = useState( languageCookie )
 
   function languageChange(newLanguage){
     if(newLanguage == "EN") {
