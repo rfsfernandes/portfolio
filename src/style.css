@@ -21,17 +21,30 @@ a {
 }
 
 a:hover {
-  color: #00adb5;
+  color: #01767c;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
+.lead{
+  color: #222831!important;
+}
+
+.box-shadow-full {
+  padding: 3rem 1.25rem;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
 .about_span {
-  color: #00adb5 !important;
+  color: #01767c !important;
 }
 
 .particle {
-  position: absolute !important;
+  position: fixed !important;
   left: 0;
   top: 0;
   width: 100%;
@@ -41,6 +54,10 @@ a:hover {
 .profile-image {
   border-radius: 500px;
   margin-bottom: 50px;
+}
+
+.container {
+  width: 50% !important;
 }
 
 .pdf-lightbox {
@@ -106,7 +123,7 @@ a:hover {
 
 .btn {
   border: none !important;
-  background-color: #00adb5 !important;
+  background-color: #01767c !important;
 }
 
 .p-r {
@@ -114,7 +131,7 @@ a:hover {
 }
 
 .color-a {
-  color: #00adb5;
+  color: #01767c;
 }
 
 .color-d {
@@ -236,7 +253,7 @@ a:hover {
 .line-mf {
   width: 80%;
   height: 3px;
-  background-color: #00adb5;
+  background-color: #01767c;
   margin: 0 auto;
 }
 
@@ -256,7 +273,7 @@ a:hover {
   content: "";
   position: absolute;
   height: 3px;
-  background-color: #00adb5;
+  background-color: #01767c;
   width: 100px;
   bottom: -12px;
 }
@@ -265,15 +282,6 @@ a:hover {
 
 .box-pl2 {
   padding-left: 2rem;
-}
-
-.box-shadow-full {
-  padding: 3rem 1.25rem;
-  position: relative;
-  background-color: #fff;
-  margin-bottom: 3rem;
-  z-index: 2;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Socials */
@@ -293,12 +301,12 @@ a:hover {
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #00adb5;
+  box-shadow: 0 0 0 3px #01767c;
   transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-  background-color: #00adb5;
+  background-color: #01767c;
   color: #fff;
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
@@ -323,7 +331,7 @@ a:hover {
 }
 
 .list-ico span {
-  color: #00adb5;
+  color: #01767c;
   margin-right: 10px;
 }
 
@@ -337,7 +345,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #00adb5;
+  box-shadow: 0 0 0 10px #01767c;
   display: block;
 }
 
@@ -384,7 +392,7 @@ a:hover {
   position: fixed;
   width: 42px;
   height: 42px;
-  background-color: #00adb5;
+  background-color: #01767c;
   opacity: 0.7;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -403,7 +411,7 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #00adb5;
+  background: #01767c;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -432,7 +440,7 @@ a:hover {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #222831;
 }
 
 #preloader:before {
@@ -441,7 +449,7 @@ a:hover {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #00adb5;
+  border-top: 6px solid #01767c;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -476,6 +484,14 @@ a:hover {
 /*
 NAVBAR
 */
+
+.language-trans {
+  color: #fff;
+}
+
+.language-reduce {
+  color: #1b1b1b;
+}
 
 .navbar-b {
   transition: all 0.5s ease-in-out;
@@ -558,26 +574,26 @@ NAVBAR
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #00adb5;
+  color: #01767c;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #00adb5;
+  background-color: #01767c;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #00adb5;
+  color: #01767c;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #00adb5;
+  color: #01767c;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #00adb5;
+  color: #01767c;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -609,13 +625,13 @@ NAVBAR
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-  background-color: #00adb5;
+  background-color: #01767c;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-  background-color: #00adb5;
+  background-color: #01767c;
 }
 
 /* Hamburger Navbar */
@@ -729,7 +745,7 @@ INTRO
 
 .intro-single .breadcrumb {
   background-color: transparent;
-  color: #00adb5;
+  color: #01767c;
 }
 
 .intro-single .breadcrumb .breadcrumb-item:before {
@@ -780,7 +796,7 @@ ABOUT
 
 .skill-mf .progress .progress-bar {
   height: 0.7rem;
-  background-color: #00adb5;
+  background-color: #01767c;
 }
 
 /*
@@ -819,7 +835,7 @@ PORTFOLIO
 }
 
 .work-content .w-more .w-ctegory {
-  color: #00adb5;
+  color: #01767c;
 }
 
 .work-content .w-more .w-cdescription {
@@ -828,12 +844,12 @@ PORTFOLIO
 
 .work-content .w-like {
   font-size: 2.5rem;
-  color: #00adb5;
+  color: #01767c;
   float: right;
 }
 
 .work-content .w-like a {
-  color: #00adb5;
+  color: #01767c;
 }
 
 .work-content .w-like .num-like {
@@ -876,7 +892,7 @@ TESTIMONIALS
 
 .testimonial-box .comit {
   font-size: 2rem;
-  color: #00adb5;
+  color: #01767c;
   background-color: #fff;
   width: 52px;
   height: 52px;
@@ -917,8 +933,8 @@ CONTACT
 */
 
 #sendmessage {
-  color: #00adb5;
-  border: 1px solid #00adb5;
+  color: #01767c;
+  border: 1px solid #01767c;
   display: none;
   text-align: center;
   padding: 15px;
@@ -981,7 +997,7 @@ BUTTON
 }
 
 .button-a {
-  background-color: #00adb5;
+  background-color: #01767c;
   color: #fff;
   border-color: #cde1f8;
 }

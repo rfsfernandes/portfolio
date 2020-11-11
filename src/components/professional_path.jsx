@@ -32,7 +32,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function ProfessionalPath() {
+function ProfessionalPath(props) {
+  const { language } = props;
   const classes = useStyles();
   return (
     <div>
@@ -44,7 +45,11 @@ function ProfessionalPath() {
                 <div className="about-me pt-4 pt-md-0">
                   <div className="title-box-2">
                     <h5 className="title-left">
-                      Professional <span class="about_span">Path</span>.
+                      {language == "EN" ? "Professional " : "Percurso "}
+                      <span className="about_span">
+                        {language == "EN" ? "Path" : "Profissional"}
+                      </span>
+                      .
                     </h5>
                   </div>
                   <Timeline align="alternate">
@@ -70,17 +75,20 @@ function ProfessionalPath() {
                             variant="h6"
                             component="h1"
                           >
-                            Junior Android Developer
+                            {language == "EN"
+                              ? "Junior Android Developer"
+                              : "Desenvolvedor Android Júnior"}
                           </Typography>
                           <Typography>
-                            Once I finished my trainee internship, I became a
-                            Junior Android Developer in the same company I did
-                            all the internships.
+                            {language == "EN"
+                              ? "Once I finished my trainee internship, I became a Junior Android Developer in the same company I did all the internships."
+                              : "Assim que terminei meu estágio curricular, tornei-me Desenvolvedor Android Júnior na mesma empresa em que fiz todos os estágios anterior."}
                           </Typography>
                         </Paper>
                         <TimelineContent>
                           <Typography variant="body2" color="textSecondary">
-                            2020 - current
+                            2020 -{" "}
+                            {language == "EN" ? "current" : "até ao momento"}
                           </Typography>
                         </TimelineContent>
                       </TimelineContent>
@@ -107,12 +115,14 @@ function ProfessionalPath() {
                             variant="h6"
                             component="h1"
                           >
-                            Trainee Android Developer
+                            {language == "EN"
+                              ? "Professional Internship - Android Developer"
+                              : "Estágio Profissional - Desenvolvedor Android"}
                           </Typography>
                           <Typography>
-                            As I finished my University course, I began a
-                            trainee internship as Android Developer in the same
-                            company I did my internship.
+                            {language == "EN"
+                              ? "As I finished my University course, I began a trainee internship as Android Developer in the same company I did my internship."
+                              : "Ao terminar o meu curso universitário, iniciei um estágio profissional como Desenvolvedor Android na mesma empresa em que fiz meu estágio curricular."}
                           </Typography>
                         </Paper>
                         <TimelineContent>
@@ -144,12 +154,14 @@ function ProfessionalPath() {
                             variant="h6"
                             component="h1"
                           >
-                            Internship - Android Developer
+                            {language == "EN"
+                              ? "Curricular Internship - Android Developer"
+                              : "Estágio Curricular - Desenvolvedor Android"}
                           </Typography>
                           <Typography>
-                            In order to finish my University course, I needed to
-                            make an internship. I chose to make an internship as
-                            an Android Developer.
+                            {language == "EN"
+                              ? "In order to finish my University course, I needed to make an internship. I chose to make an internship as an Android Developer at Digital Workd."
+                              : "Para terminar meu CTeSP, precisei de fazer um estágio curricular. Optei por fazer um estágio como Desenvolvedor Android, na Digital Works."}
                           </Typography>
                         </Paper>
                         <TimelineContent>
@@ -181,12 +193,14 @@ function ProfessionalPath() {
                             variant="h6"
                             component="h1"
                           >
-                            Supermarket Product Repositor
+                            {language == "EN"
+                              ? "Supermarket Product Repositor"
+                              : "Repositor de Supermercado"}
                           </Typography>
                           <Typography>
-                            Worked as a product repositor for 6 months in
-                            Continente. That I was also studying at the same
-                            time.
+                            {language == "eN"
+                              ? "Worked as a product repositor for 6 months at Continente. I was also studying at the sametime."
+                              : "Trabalhei como repositor de produtos durante 6 meses no Continente. Trabalhava e estudava ao mesmo tempo."}
                           </Typography>
                         </Paper>
                         <TimelineContent>
@@ -218,11 +232,14 @@ function ProfessionalPath() {
                             variant="h6"
                             component="h1"
                           >
-                            Restaurant Employee At Water Themed Park
+                            {language == "EN"
+                              ? "Restaurant Employee At Water Themed Park"
+                              : "Empregado de Restaurante Num Parque Aquático"}
                           </Typography>
                           <Typography>
-                            Worked at a Water Themed Park, called Aquashow, as
-                            cook and also as barista.
+                            {language == "EN"
+                              ? "Worked at a Water Themed Park, called Aquashow, as cook and also as barista."
+                              : "Trabalhei num Parque Temático Aquático, denominado Aquashow, como cozinheiro e também como barista."}
                           </Typography>
                         </Paper>
                         <TimelineContent>
@@ -254,11 +271,14 @@ function ProfessionalPath() {
                             variant="h6"
                             component="h1"
                           >
-                            Events Photographer
+                            {language == "EN"
+                              ? "Events Photographer"
+                              : "Fotografo de Eventos"}
                           </Typography>
                           <Typography>
-                            Worked as an event photographer at some parties make
-                            by local students.
+                            {language == "EN"
+                              ? "Worked as an event photographer at some parties made by local students."
+                              : "Trabalhei como fotógrafo de eventos em algumas festas realizadas por estudantes locais."}
                           </Typography>
                         </Paper>
                         <TimelineContent>

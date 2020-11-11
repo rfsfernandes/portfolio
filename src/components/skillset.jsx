@@ -55,6 +55,7 @@ class SkillSet extends React.Component {
   }
 
   render() {
+    const { language } = this.props;
     return (
       <section id="about" className="about-mf sect-pt4 route">
         <div className="container">
@@ -82,7 +83,11 @@ class SkillSet extends React.Component {
                     <div className="skill-mf">
                       <div className="title-box-2">
                         <h5 className="title-left">
-                          My <span class="about_span">Skillset</span>.
+                          {language == "EN" ? "My " : "O meu conjunto de "}
+                          <span className="about_span">
+                            {language == "EN" ? "Skillset" : "habilidade"}
+                          </span>
+                          .
                         </h5>
                       </div>
                       {this.state.skills.map((skill) => {

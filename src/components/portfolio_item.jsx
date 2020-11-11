@@ -49,6 +49,7 @@ function PortfolioItem(props) {
               href={image}
               data-lightbox={props.filename}
               style={{ display: "none" }}
+              key={image}
             >
               jsx-a11y/anchor-has-content warning
             </a>

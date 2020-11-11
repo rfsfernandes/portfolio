@@ -3,6 +3,7 @@ import imageOverlay from "../img/earth-2.jpg";
 
 class Contact extends React.Component {
   render() {
+    const {language} = this.props
     return (
       <section
         className="paralax-mf footer-paralax bg-image sect-mt4 route"
@@ -17,7 +18,7 @@ class Contact extends React.Component {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="title-box-2">
-                        <h5 className="title-left">Send A Message</h5>
+                        <h5 className="title-left">{language == "EN" ? "Send a Message" : "Enviar Mensagem"}</h5>
                       </div>
                       <div>
                         <form
@@ -26,7 +27,7 @@ class Contact extends React.Component {
                           className="contactForm"
                         >
                           <div id="sendmessage">
-                            Your message has been sent. Thank you!
+                            {language == "EN" ? "Your message has been sent. Thank you!" : "A sua mensagem foi enviada. Obrigado!"}
                           </div>
                           <div id="errormessage"></div>
                           <div className="row">
@@ -37,9 +38,9 @@ class Contact extends React.Component {
                                   name="name"
                                   className="form-control"
                                   id="name"
-                                  placeholder="Your Name"
+                                  placeholder={language == "EN" ? "Your name" : "O seu nome"}
                                   data-rule="minlen:4"
-                                  data-msg="Please enter at least 4 chars"
+                                  data-msg={language == "EN" ? "Please enter at least 4 chars" : "Por favor, introduza pelo menos 4 caracteres"}
                                   required
                                 />
                                 <div className="validation"></div>
@@ -52,9 +53,9 @@ class Contact extends React.Component {
                                   className="form-control"
                                   name="email"
                                   id="email"
-                                  placeholder="Your Email"
+                                  placeholder={language == "EN" ? "Your email" : "O seu email"}
                                   data-rule="email"
-                                  data-msg="Please enter a valid email"
+                                  data-msg={language == "EN" ? "Please enter a valid email" : "Por favor, introduza um email válido"}
                                   required
                                 />
                                 <div className="validation"></div>
@@ -67,9 +68,9 @@ class Contact extends React.Component {
                                   className="form-control"
                                   name="subject"
                                   id="subject"
-                                  placeholder="Subject"
-                                  data-rule="minlen:4"
-                                  data-msg="Please enter at least 8 chars of subject"
+                                  placeholder={language == "EN" ? "Subject" : "Assunto"}
+                                  data-rule="minlen:8"
+                                  data-msg={language == "EN" ? "Please enter at least 8 chars of subject" : "Por favor, introduza pelo menos 8 caracteres"}
                                   required
                                 />
                                 <div className="validation"></div>
@@ -82,8 +83,8 @@ class Contact extends React.Component {
                                   name="message"
                                   rows="5"
                                   data-rule="required"
-                                  data-msg="Please write something for us"
-                                  placeholder="Message"
+                                  data-msg={language == "EN" ? "Please write something for me!" : "Escreva-me algo!"}
+                                  placeholder={language == "EN" ? "Message" : "Mensagem"}
                                   required
                                 ></textarea>
                                 <div className="validation"></div>
@@ -94,7 +95,7 @@ class Contact extends React.Component {
                                 type="submit"
                                 className="button button-a button-big button-rouded"
                               >
-                                Send Message
+                                {language == "EN" ? "Send Message" : "Enviar Message"}
                               </button>
                             </div>
                           </div>
@@ -103,21 +104,24 @@ class Contact extends React.Component {
                     </div>
                     <div className="col-md-6">
                       <div className="title-box-2 pt-4 pt-md-0">
-                        <h5 className="title-left">Get in Touch</h5>
+                        <h5 className="title-left">{language == "EN" ? "Get in Touch" : "Entre em contacto"}</h5>
                       </div>
                       <div className="more-info">
                         <p className="lead">
-                          Whether you want to get in touch, talk about a project
-                          collaboration, or just say hi, I'd love to hear from
-                          you.
-                          <br />
-                          Simply fill the form and send me an email.
+                        {language == "EN" ? "Whether you want to get in touch, talk about a project collaboration, or just say hi, I'd love to hear from you. " 
+                        : 
+                        "Quer queira apenas contactar-me, falar sobre uma colaboração num projeto, ou apenas dizer olá, adora ouvir o que tem para dizer."}
+                        
+                        <br></br>
+
+                        {language == "EN" ? "Simply fill the form and send me an email." : "Preencha o formulário e envie-me um email."}
+
                         </p>
-                        <ul class="list-ico">
+                        <ul className="list-ico">
                           {/* <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
                                 <li><span class="ion-ios-telephone"></span> (617) 557-0089</li> */}
                           <li>
-                            <span class="ion-email"></span>{" "}
+                            <span className="ion-email"></span>{" "}
                             rodrigoserrafernandes98@gmail.com
                           </li>
                         </ul>

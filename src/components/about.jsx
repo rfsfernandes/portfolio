@@ -51,7 +51,7 @@ class About extends React.Component {
           value: "60",
         },
       ],
-      about_me: [
+      about_meEN: [
         {
           id: "first-p-about",
           content:
@@ -79,10 +79,39 @@ class About extends React.Component {
             "I have a very objective attitude, which leads me to solve problems relatively quickly and focus on priorities. I have always liked challenges and, therefore, I have developed a good problem-solving capacity, be they professional or personal.",
         },
       ],
+      about_mePT:[
+        {
+          id: "first-p-about",
+          content:
+            "Considero-me uma pessoa bastante profissional e organizada. Gosto de manter a minha mesa de trabalho organizada e limpa, para que não haja nenhuma distração. Por conseguinte, o meu código e os meus projetos também o são, desta forma consigo seguir mais facilmente o que estou a desenvolver.",
+        },
+        {
+          id: "second-p-about",
+          content:
+            "Gosto de manter consistência, pelo que todos os meus projetos atuais seguem sempre o mesmo template, em termos de estrutura, criado por mim. Para além disto, tento ser sempre o mais eficiente possível, pelo que consigo ter uma boa gestão do tempo.",
+        },
+        {
+          id: "third-p-about",
+          content:
+            "Tenho melhorado e aperfeiçoado o meu trabalho em equipa ao longo da minha vida académica e profissional, pois sem uma equipa tudo é mais chato e muito mais difícil. O trabalho de equipa é fundamental e é uma prioridade. Tento sempre ajudar os meus colegas de equipa, tal como também lhes peço ajuda quando sinto mais dificuldades. Todo o processo de desenvolvimento tem de ser realizado com uma enorme entreajuda entre os elementos da equipa.",
+        },
+        {
+          id: "fourth-p-about",
+          content:
+            "Sou uma pessoa muito dedicada e empenhada em tudo o que faço. Sou perfecionista e exigente comigo mesmo." +
+            "Considero-me um aprendiz sem vim: adoro aprender e estarei sempre a aprender. É essa a vida de um programador, certo? Nunca se para de aprender. E se o fizer... É o fim!"
+        },
+        {
+          id: "five-p-about",
+          content:
+            "Consigo ter uma atitude bastante objetiva, o que me leva a resolver problemas de forma relativamente rápida e focar-me nas prioridades. Sempre gostei de desafios e, por isso, desenvolvi uma boa capacidade de resolução de problemas, sejam eles profissionais ou pessoais.",
+        },
+      ]
     };
   }
 
   render() {
+    const {language} = this.props
     return (
       <section id="about" className="about-mf sect-pt4 route">
         <div className="container">
@@ -94,16 +123,24 @@ class About extends React.Component {
                     <div className="about-me pt-4 pt-md-0">
                       <div className="title-box-2">
                         <h5 className="title-left">
-                          Hello, I'm <span class="about_span">Rodrigo</span>.
+                          {language == "EN" ? "Hello, I'm " : "Olá, sou o "}<span className="about_span">Rodrigo</span>.
                         </h5>
                       </div>
-                      {this.state.about_me.map((content) => {
+                      {language == "EN" ? this.state.about_meEN.map((content) => {
                         return (
                           <p className="lead" key={content.id}>
                             {content.content}
                           </p>
                         );
-                      })}
+                      }) 
+                    :
+                    this.state.about_mePT.map((content) => {
+                      return (
+                        <p className="lead" key={content.id}>
+                          {content.content}
+                        </p>
+                      );
+                    })}
                     </div>
                   </div>
                 </div>

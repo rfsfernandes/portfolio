@@ -30,11 +30,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function AcedemicPath() {
+function AcedemicPath(props) {
+  const { language } = props;
   const classes = useStyles();
   return (
     <div>
-      <section id="about" className="about-mf sect-pt4 route">
+      <section id="my-path" className="about-mf sect-pt4 route">
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
@@ -42,7 +43,11 @@ function AcedemicPath() {
                 <div className="about-me pt-4 pt-md-0">
                   <div className="title-box-2">
                     <h5 className="title-left">
-                      Academic <span class="about_span">Path</span>.
+                      {language == "EN" ? "Academic " : "Percurso "}{" "}
+                      <span className="about_span">
+                        {language == "EN" ? "Path" : "Académico"}
+                      </span>
+                      .
                     </h5>
                   </div>
                   <Timeline align="alternate">
@@ -68,17 +73,19 @@ function AcedemicPath() {
                             variant="h6"
                             component="h1"
                           >
-                            Degree in Computer Engineering
+                            {language == "EN"
+                              ? "Degree in Computer Engineering"
+                              : "Licenciatura em Engenharia Informática"}
                           </Typography>
                           <Typography>
-                            Computer Engineering Degree from Instituto
-                            Politécnico de Beja, at Escola de Tecnologias E
-                            Gestão.
+                            {language == "EN"
+                              ? "Computer Engineering Degree from Instituto Politécnico de Beja, at Escola de Tecnologia E Gestão."
+                              : "Licenciatura em Engenharia Informática no Instituto Politécnico de Beja na Escola de Tecnologia E Gestão"}
                           </Typography>
                         </Paper>
                         <TimelineContent>
                           <Typography variant="body2" color="textSecondary">
-                            2019 - Current
+                            2019 - {language == "EN" ? "Current" : "A decorrer"}
                           </Typography>
                         </TimelineContent>
                       </TimelineContent>
@@ -105,12 +112,14 @@ function AcedemicPath() {
                             variant="h6"
                             component="h1"
                           >
-                            The Complete 2020 Web Development Bootcamp
+                            {language == "EN"
+                              ? "The Complete 2020 Web Development Bootcamp"
+                              : "Bootcamp completo de Desenvolvimento Web de 2020"}
                           </Typography>
                           <Typography>
-                            A 54h Fullstack bootcamp from Udemy, instructed by
-                            Angela Yu, one of the bests instructors. I learned
-                            about MongoDB, ExpressJS, ReactJS and NodeJS.
+                            {language == "EN"
+                              ? "A 54h Fullstack bootcamp from Udemy, instructed by Angela Yu, one of the bests instructors. I learned about MongoDB, ExpressJS, ReactJS and NodeJS."
+                              : "Um bootcamp Fullstack de 54h da Udemy, instruído pela Angela Yu, uma das melhores instrutoras da plataforma. Aprendi MongoDB, ExpressJS, ReactJS e NodeJS."}
                           </Typography>
                         </Paper>
                         <TimelineContent>
@@ -142,14 +151,14 @@ function AcedemicPath() {
                             variant="h6"
                             component="h1"
                           >
-                            The Complete App Design Course - UX, UI and Design
-                            Thinking
+                            {language == "EN"
+                              ? "The Complete App Design Course - UX, UI and Design Thinking"
+                              : "Curso Completo de Design de Aplicações - UX, UI e Pensamento de Design"}
                           </Typography>
                           <Typography>
-                            A course where I learned about UI, UX and Design, at
-                            Udemy with the instructor Angela Yu. Since it was
-                            one of my weaknesses, I took this course in order to
-                            improve myself and to open my mind a bit more.
+                            {language == "EN"
+                              ? "A course where I learned about UI, UX and Design, at Udemy with the instructor Angela Yu. Since it was one of my weaknesses, I took this course in order to improve myself and to open my mind a bit more."
+                              : "Um curso onde aprendi sobre UI, UX e Design, na Udemy com a instrutora Angela Yu. Por ser um dos meus pontos fracos, fiz este curso com o objetivo de melhorar essa minha fraquesa e abrir um pouco mais a minha mente."}
                           </Typography>
                         </Paper>
                         <TimelineContent>
@@ -181,14 +190,14 @@ function AcedemicPath() {
                             variant="h6"
                             component="h1"
                           >
-                            Professional Technical Course - Web Technologies and Mobile Devices
+                            {language == "EN"
+                              ? "Professional Technical Course - Web Technologies and Mobile Devices"
+                              : "Curso Técnico Superior Profissional - Tecnologias Web e Dispositivos Móveis"}
                           </Typography>
                           <Typography>
-                            A course specially made to prepare student for the professional World from Instituto
-                            Politécnico de Beja, at Escola de Tecnologias E
-                            Gestão.. 
-                            I learned how to configure servers, create and manage databases, API's development, web applications development
-                            and mobile applications development.
+                            {language == "EN"
+                              ? "A course specially made to prepare student for the professional World from Instituto Politécnico de Beja, at Escola de Tecnologias E Gestão.. I learned how to configure servers, create and manage databases, API's development, web applications development and mobile applications development."
+                              : "Um curso feito especialmente para preparar os alunos para o mundo profissional, do Instituto Politécnico de Beja, na Escola de Tecnologias E Gestão. Aprendi a configurar servidores, criar e gerir bases de dados, desenvolvimento de API's, desenvolvimento de aplicações web e desenvolvimento de aplicações mobile."}
                           </Typography>
                         </Paper>
                         <TimelineContent>

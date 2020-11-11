@@ -13,6 +13,7 @@ class Intro extends React.Component {
     };
   }
   render() {
+    const {language} = this.props
     return (
       <div>
         <Particles params={particles} className="particle" />
@@ -33,9 +34,12 @@ class Intro extends React.Component {
                   <span className="text-slider-items"></span>
                   <strong className="text-slider">
                     <Typed
-                      strings={[
+                      strings={language == "EN" ? [
                         "Mobile Developer",
                         "Full Stack Developer",
+                      ] : [
+                        "Desenvolvedor Mobile",
+                        "Desenvolvedor Full Stack",
                       ]}
                       typeSpeed={80}
                       backDelay={1100}
@@ -50,7 +54,7 @@ class Intro extends React.Component {
                     href="#work"
                     role="button"
                   >
-                    View My Work
+                    {language == "EN" ? "View My Work" : "Ver o Meu Trabalho"}
                   </a>
                 </p>
               </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import PortfolioItem from "./portfolio_item.jsx";
-const pdf = process.env.PUBLIC_URL + "/pdf/cv.pdf";
-const descriptions = {
+
+const descriptionsEN = {
   NaturalPTrails: (
     <div>
       <p>
@@ -67,7 +67,7 @@ const descriptions = {
       <p>
         This application wil be given to fishermen in order to make a research
         on which fish are more caughed by the fishermen and where they are
-        caughed.
+        caught.
       </p>
       <p>
         It will also track where the boat were and then send a full report by
@@ -86,17 +86,127 @@ const descriptions = {
         It was ment to keep track of the evolution of the Covid19 pandemic. I
         used an open source API.
       </p>
+      <p>The design was fully made by me.</p>
       <p>
-        I trying to release it to the stores, but Google Play blocked it since
-        they think it violates their Policies.
+        I tried to release it to the stores, but Google Play blocked it since
+        they thought it violates their Policies.
       </p>
     </div>
   ),
   FullStack: (
     <div>
       <p>
-        It's a challenge in order to test my skills in Full Stack Development
-        using the MERN stack. MERN stands for:
+        It's a challenge ment to test my skills as a Full Stack Developer using
+        the MERN stack. MERN stands for:
+        <ul>
+          <li>MongoDB</li>
+          <li>ExpressJS</li>
+          <li>ReactJS</li>
+          <li>NodeJS</li>
+        </ul>
+      </p>
+    </div>
+  ),
+};
+
+const descriptionsPT = {
+  NaturalPTrails: (
+    <div>
+      <p>
+        Desenvolvi esta aplicação enquanto estava no meu primeiro estágio. Foi
+        uma aplicação desenvolvida para o ICNF - Instituto da Conservação da
+        Natureza e da Floresta de Portugal. Levei cerca de 4 meses para
+        desenvolver.
+      </p>
+      <p>
+        Esta aplicação permite aos utilizadores fazer alguns percursos a partir
+        de Portugal e ver Pontos de interesse desses percursos. Você pode fazer
+        essas trilhas de carro, cavalo, caminhada ou bicicleta.
+      </p>
+      <p>
+        Quando você inicia um percurso, o aplicativo regista quanto tempo você
+        leva para fazer aquele percurso, avisa quando você sair do percurso, e
+        em alguns casos só vão deixar você terminar o percurso quando você
+        estiver perto do fim. Quando terminar o percurso, você será colocado
+        numa tabela de classificação que poderá visitar no seu perfil.
+      </p>
+      <p>
+        Você pode, também, comentar sobre o percurso e os seus Pontos de
+        Interesse. também há um passeio virtual para cada percurso. Você pode
+        verificar o tempo médio para cada percurso.
+      </p>
+      <p>Esta aplicação já se encontra na PlayStore e na AppStore</p>
+    </div>
+  ),
+  Myticket: (
+    <div>
+      <p>
+        Esta aplicação foi o meu primeiro grande projeto. Atualmente está a ser
+        desenvolvido por mim, mas não fui eu que o comecei. Este projeto tem
+        quase 1 ano.
+      </p>
+      <p>
+        O cliente é a empresa MyTicket, que apresenta alguns serviços a outras
+        empresas, como vales-educação, vales-saúde, vales-alimentação, etc, e
+        esses vales e cartões só podem ser usados nos seus parceiros aderentes.
+      </p>
+      <p>
+        O principal objetivo da aplicação é gerir vales e cartões de alimentação
+        dados aos funcionários pela sua empresa. Você também pode transferir
+        dinheiro de alguns cartões para outros.
+      </p>
+      <p>
+        Há também um novo recurso, no qual estou a trabalhar, que permite aos
+        funcionários ,com um ticket restaurante móvel ativo, pedir comida de
+        algum restaurante parceiro da rede MyTicket.
+      </p>
+      <p>
+        A primeira versão desta aplicação está quase na PlayStore e Loja de
+        aplicativos.
+      </p>
+    </div>
+  ),
+  PescApanha: (
+    <div>
+      <p>
+        A PescApanha foi totalmente desenvolvido por mim para o IPMA - Instituto
+        Português do Mar e da Atmosfera.
+      </p>
+      <p>A aplicação é para ser utilizada num estuado realizado pelo IPMA.</p>
+      <p>
+        Esta aplicação será dada a pescadores a fim de fazerem uma pesquisa de
+        forma a verificar quais peixes são mais capturados pelos pescadores e a
+        zona onde eles são mais capturados.
+      </p>
+      <p>
+        Também irá rastrear onde o barco andou e irá enviar um relatório
+        completo por e-mail para IPMA.
+      </p>
+      <p>
+        Por se tratar de um projeto privado, para uma pesquisa, nunca chegará às
+        lojas públicas.
+      </p>
+    </div>
+  ),
+  Covid2Day: (
+    <div>
+      <p>Este projeto foi criado por mim.</p>
+      <p>
+        O objetivo era acompanhar a evolução da pandemia Covid19. Utilizei uma
+        API de código aberto.
+      </p>
+      <p>O design da aplicação foi feito por mim também.</p>
+      <p>
+        Tentei publicar para as lojas, mas o Google Play bloqueou a aplicação
+        uma vez que eles pensaram que isso viola as suas políticas.
+      </p>
+    </div>
+  ),
+  FullStack: (
+    <div>
+      <p>
+        É um desafio para testar as minhas habilidades como desenvolvedor Full
+        Stack usando a stack MERN. MERN significa:
         <ul>
           <li>MongoDB</li>
           <li>ExpressJS</li>
@@ -110,16 +220,23 @@ const descriptions = {
 
 class Portfolio extends React.Component {
   render() {
+    const { language } = this.props;
+    const descriptions = language == "EN" ? descriptionsEN : descriptionsPT;
     return (
       <section id="work" className="portfolio-mf sect-pt4 route">
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
               <div className="title-box text-center">
-                <h3 className="title-a">Some projects I worked on</h3>
+                <h3 className="title-a">
+                  {language == "EN"
+                    ? "Some projects I worked on"
+                    : "Alguns projetos em que trabalhei"}
+                </h3>
                 <p className="subtitle-a">
-                  This projects were made wether in a professional contex,
-                  University or by my own.
+                  {language == "EN"
+                    ? "This projects were made wether in a professional contex, University or by my own."
+                    : "Estes projetos foram realizados em contexto profissional, Universitário ou por conta própria."}
                 </p>
                 <div className="line-mf"></div>
               </div>
@@ -166,7 +283,6 @@ class Portfolio extends React.Component {
               isExtended={false}
               description={descriptions.FullStack}
             />
-            
           </div>
         </div>
       </section>
