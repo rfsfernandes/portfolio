@@ -30,6 +30,10 @@ a:hover {
   color: #222831!important;
 }
 
+.react-pdf__Page__textContent {
+  display: none !important;
+}
+
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;

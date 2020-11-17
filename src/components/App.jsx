@@ -41,7 +41,9 @@ function App() {
   return (
     <div>
       <Particles params={particles} className="particle" />
+      <BackToTop />
       <Navbar callback={languageChange} language={language} />
+
       <Intro language={language} />
       <About language={language} />
       <SkillSet language={language} />
@@ -50,8 +52,8 @@ function App() {
       <Portfolio language={language} />
       <CV language={language} />
       <Contact language={language} />
+
       <Preloader />
-      <BackToTop />
     </div>
   );
 }
