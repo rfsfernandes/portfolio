@@ -14,7 +14,7 @@ class Intro extends React.Component {
   render() {
     const { language } = this.props;
     return (
-      <div>
+      <div style={{ paddingTop: "100px" }}>
         <Slide in {...{ timeout: 1500 }}>
           <div id="home" className="intro route bg-image">
             <div className="intro-content display-table">
@@ -25,7 +25,6 @@ class Intro extends React.Component {
                       className="profile-image"
                       src={this.state.logo}
                       alt="logo"
-                      style={{ maxWidth: "55%" }}
                     />
                   </a>
                   <h1 className="intro-title mb-4">Rodrigo Fernandes</h1>

@@ -8,14 +8,14 @@ class SkillSet extends React.Component {
         {
           id: "Android_skill",
           content: "Android",
-          porcentage: "95%",
-          value: "95",
+          porcentage: "75%",
+          value: "75",
         },
         {
           id: "Java_skill",
           content: "Java",
-          porcentage: "95%",
-          value: "95",
+          porcentage: "70%",
+          value: "70",
         },
         { id: "HTML5_skill", content: "HTML5", porcentage: "80%", value: "80" },
         { id: "CSS3_skill", content: "CSS3", porcentage: "75%", value: "75" },
@@ -23,20 +23,20 @@ class SkillSet extends React.Component {
         {
           id: "Javascript_skill",
           content: "Javascript",
-          porcentage: "73%",
-          value: "73",
+          porcentage: "60%",
+          value: "60",
         },
         {
           id: "ReactJS_skill",
           content: "ReactJS",
-          porcentage: "75%",
-          value: "75",
+          porcentage: "55%",
+          value: "55",
         },
         {
           id: "Sql_skill",
           content: "SQL",
-          porcentage: "70%",
-          value: "70",
+          porcentage: "60%",
+          value: "60",
         },
         {
           id: "MongoDB_skill",
@@ -47,8 +47,8 @@ class SkillSet extends React.Component {
         {
           id: "Wordpress_skill",
           content: "Wordpress",
-          porcentage: "60%",
-          value: "60",
+          porcentage: "45%",
+          value: "45",
         },
       ],
     };
