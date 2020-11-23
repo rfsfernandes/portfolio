@@ -12,8 +12,6 @@ import AcademicPath from "./academic_path";
 import SkillSet from "./skillset";
 import CV from "./cv";
 
-import Particles from "react-particles-js";
-import particles from "../const/particle";
 function App() {
   let decodedCookie = decodeURIComponent(document.cookie);
   let ca = decodedCookie.split(";");
@@ -25,7 +23,6 @@ function App() {
     }
   });
 
-  console.log(languageCookie);
   const [language, setLanguage] = useState(languageCookie);
 
   function languageChange(newLanguage) {
@@ -39,11 +36,9 @@ function App() {
   }
 
   return (
-    <div>
-      <Particles params={particles} className="particle" />
+    <div style={{position: "relative"}}>
       <BackToTop />
       <Navbar callback={languageChange} language={language} />
-
       <Intro language={language} />
       <About language={language} />
       <SkillSet language={language} />

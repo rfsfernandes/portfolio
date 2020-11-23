@@ -14,13 +14,13 @@ class Intro extends React.Component {
   render() {
     const { language } = this.props;
     return (
-      <div style={{ paddingTop: "100px" }}>
+      <div style={{ paddingTop: "150px" }}>
         <Slide in {...{ timeout: 1500 }}>
           <div id="home" className="intro route bg-image">
             <div className="intro-content display-table">
               <div className="table-cell">
                 <div className="container">
-                  <a className="navbar-brand js-scroll" href="#page-top">
+                  <a className="js-scroll" href="#page-top">
                     <img
                       className="profile-image"
                       src={this.state.logo}

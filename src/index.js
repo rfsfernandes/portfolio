@@ -9,7 +9,8 @@ import "./img/icons/css/ionicons.css";
 import "./img/font-awesome/css/font-awesome.css";
 import "lightbox2/dist/css/lightbox.min.css";
 import "./style.css";
-
+import Particles from "react-particles-js";
+import particles from "./const/particle";
 //import js libraries
 import "jquery/dist/jquery.min.js";
 import "popper.js/dist/popper.min.js";
@@ -24,6 +25,7 @@ import App from "./components/App";
 
 ReactDOM.render(
   <React.Fragment>
+    <Particles params={particles} className="particle" />
       <App/>
   </React.Fragment>,
   document.getElementById("root")
