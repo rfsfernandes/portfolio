@@ -98,7 +98,7 @@ class About extends React.Component {
         {
           id: "fourth-p-about",
           content:
-            "Sou uma pessoa muito dedicada e empenhada em tudo o que faço. Sou perfecionista e exigente comigo mesmo." +
+            "Sou uma pessoa muito dedicada e empenhada em tudo o que faço. Sou perfecionista e exigente comigo mesmo. " +
             "Considero-me um aprendiz sem vim: adoro aprender e estarei sempre a aprender. É essa a vida de um programador, certo? Nunca se para de aprender. E se o fizer... É o fim!"
         },
         {

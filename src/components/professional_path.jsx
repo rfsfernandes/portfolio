@@ -274,7 +274,7 @@ function ProfessionalPath(props) {
                             >
                               {language == "EN"
                                 ? "Events Photographer"
-                                : "Fotografo de Eventos"}
+                                : "Fotógrafo de Eventos"}
                             </Typography>
                             <Typography>
                               {language == "EN"
