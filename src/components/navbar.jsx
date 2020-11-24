@@ -179,32 +179,32 @@ class Navbar extends React.Component {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link js-scroll active" href="#home">
-                  Home
+                  {language == "EN" ? "Home" : "Início"}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="#about">
-                  About
+                  {language == "EN" ? "About" : "Sobre"}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="#my-path">
-                  My Path
+                  {language == "EN" ? "My Path" : "Caminho"}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="#work">
-                  Work
+                  {language == "EN" ? "Work" : "Trabalho"}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="#curriculum">
-                  Curriculum
+                  {language == "EN" ? "Curriculum" : "Currículo"}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="#contact">
-                  Contact
+                  {language == "EN" ? "Contact" : "Contacto"}
                 </a>
               </li>
             </ul>

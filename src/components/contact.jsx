@@ -151,7 +151,7 @@ class Contact extends React.Component {
                           <p className="lead">
                             {language == "EN"
                               ? "Whether you want to get in touch, talk about a project collaboration, or just say hi, I'd love to hear from you. "
-                              : "Quer queira apenas contactar-me, falar sobre uma colaboração num projeto, ou apenas dizer olá, adora ouvir o que tem para dizer."}
+                              : "Quer queira apenas contactar-me, falar sobre uma colaboração num projeto, ou apenas dizer olá, adorava ouvir o que tem para dizer."}
 
                             <br></br>
 
@@ -160,8 +160,6 @@ class Contact extends React.Component {
                               : "Preencha o formulário e envie-me um email."}
                           </p>
                           <ul className="list-ico">
-                            {/* <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                                <li><span class="ion-ios-telephone"></span> (617) 557-0089</li> */}
                             <li>
                               <span className="ion-email"></span>{" "}
                               rodrigoserrafernandes98@gmail.com
