@@ -84,9 +84,9 @@ class SkillSet extends React.Component {
                       <div className="skill-mf">
                         <div className="title-box-2">
                           <h5 className="title-left">
-                            {language == "EN" ? "My " : "O meu conjunto de "}
+                            {language == "EN" ? "My " : "As minhas "}
                             <span className="about_span">
-                              {language == "EN" ? "Skillset" : "Habilidades"}
+                              {language == "EN" ? "Skillset" : "Capacidades"}
                             </span>
                             .
                           </h5>
