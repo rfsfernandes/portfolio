@@ -5,7 +5,7 @@ import Pagination from "@material-ui/lab/Pagination";
 import Slide from "@material-ui/core/Slide";
 
 function CV(props) {
-  const pdf = process.env.PUBLIC_URL + "/pdf/cv.pdf";
+  const pdf = process.env.PUBLIC_URL + "/pdf/cv3.pdf";
   const { language } = props;
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -60,14 +60,7 @@ function CV(props) {
                             : "(Clique no documento para ver em detalhe)"}
                         </p>
                       </div>
-                      <div>
-                        <Pagination
-                          className="pdf-pagination"
-                          count={numPages}
-                          shape="rounded"
-                          onChange={handleChange}
-                        />
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
