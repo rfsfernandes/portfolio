@@ -19,9 +19,14 @@ import "./libs/easing.js";
 import "lightbox2/dist/js/lightbox.min.js";
 
 import * as serviceWorker from "./serviceWorker";
+import ReactGA from 'react-ga';
 
 
 import App from "./components/App";
+
+
+ReactGA.initialize('G-Z1LFQV3FXX'); // add your tracking id here.
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.Fragment>
