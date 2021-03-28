@@ -107,6 +107,31 @@ const descriptionsEN = {
       </p>
     </div>
   ),
+  PoketDex: (
+    <div>
+      <p>
+        The PoketDex application was developed in order to test my skills as an
+        Android developer, requested by a company.
+      </p>
+      <p>
+        It was developed using the MVVM architecture and the API 
+        <a href="https://pokeapi.co/">PokéAPI</a>.
+      </p>
+      <p>
+        The purpose of the application is to function as a Pokédex from the famous series
+        Pokémon, where you have the list of Pokémon, their attacks, their
+        characteristics, etc.
+      </p>
+      <p>
+        It was part of the test to develop the application so that it was
+        possible to use in both portrait and landscape mode.
+      </p>
+      <p>
+        As requested in the documentation of  
+        <a href="https://pokeapi.co/">PokéAPI</a>, I implemented a cache mechanism using Room in order to save some unnecessary API calls.
+      </p>
+    </div>
+  ),
 };
 
 const descriptionsPT = {
@@ -216,6 +241,32 @@ const descriptionsPT = {
       </p>
     </div>
   ),
+  PoketDex: (
+    <div>
+      <p>
+        A aplicação PoketDex foi desenvolvida no âmbito de testar as minhas
+        capacidades enquanto desenvolvedor Android, a pedido de uma empresa.
+      </p>
+      <p>
+        Foi desenvolvida utilizando a arquitectura MVVM e a API 
+        <a href="https://pokeapi.co/">PokéAPI</a>.
+      </p>
+      <p>
+        O objetivo da aplicação é funcionar como um Pokédex da famosa série
+        Pokémon, onde tem a lista de Pokémons, os seus ataques, as suas
+        características, etc.
+      </p>
+      <p>
+        Fazia parte do teste desenvolver a aplicação de forma a que fosse
+        possível utilizar tanto em moto retrato como em modo paisagem.
+      </p>
+      <p>
+        Tal como solicitado na documentação da 
+        <a href="https://pokeapi.co/">PokéAPI</a>, foi implementado um mecanismo
+        de cache utilizando o Room, de forma a prevenir chamadas desnecessárias.
+      </p>
+    </div>
+  ),
 };
 
 class Portfolio extends React.Component {
@@ -283,6 +334,14 @@ class Portfolio extends React.Component {
                 text="MongoDB | ExpressJS | ReactJS | NodeJS"
                 isExtended={false}
                 description={descriptions.FullStack}
+              />
+              <PortfolioItem
+                directory="/img/poket/"
+                filename="poket"
+                title="PoketDex"
+                text="Android | Java"
+                isExtended={true}
+                description={descriptions.PoketDex}
               />
             </div>
           </div>
