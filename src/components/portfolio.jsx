@@ -132,6 +132,16 @@ const descriptionsEN = {
       </p>
     </div>
   ),
+  EcoEscolas: (
+    <div>
+      <p>
+        Academic project carried out within the scope of the Integrated Project subject, in order to learn more about game development using Unity3D.
+      </p>
+      <p>
+        Developed in C #, with 3D modeling performed within the Unity3D platform itself and with a SQLite database.
+      </p>
+    </div>
+  )
 };
 
 const descriptionsPT = {
@@ -267,6 +277,16 @@ const descriptionsPT = {
       </p>
     </div>
   ),
+  EcoEscolas: (
+    <div>
+      <p>
+        Projeto académico realizado no âmbito da cadeira de Projeto Integrado, de forma a aprender mais sobre desenvolvimento de jogos utilizando o Unity3D.
+      </p>
+      <p>
+        Desenvolvido em C#, com modelação 3D realizada dentro da própria plataforma do Unity3D e com uma base de dados em SQLite.
+      </p>
+    </div>
+  )
 };
 
 class Portfolio extends React.Component {
@@ -328,20 +348,28 @@ class Portfolio extends React.Component {
                 description={descriptions.Covid2Day}
               />
               <PortfolioItem
-                directory="/img/poket/"
-                filename="poket"
-                title="PoketDex"
-                text="Android | Java"
-                isExtended={true}
-                description={descriptions.PoketDex}
-              />
-              <PortfolioItem
                 directory="/img/fullstackchallenge/"
                 filename="fullstackchallenge"
                 title="Full Stack Challenge"
                 text="MongoDB | ExpressJS | ReactJS | NodeJS"
                 isExtended={false}
                 description={descriptions.FullStack}
+              />
+              <PortfolioItem
+                directory="/img/ecoescolas/"
+                filename="ecoescolas"
+                title={language == "EN" ? "Unity3D - ESTIG Sustainable School" : "Unity3D - ESTIG Escola Sustentável"}
+                text="Unity3D | C# | SQLite"
+                isExtended={true}
+                description={descriptions.EcoEscolas}
+              />
+              <PortfolioItem
+                directory="/img/poket/"
+                filename="poket"
+                title="PoketDex"
+                text="Android | Java"
+                isExtended={true}
+                description={descriptions.PoketDex}
               />
             </div>
           </div>
