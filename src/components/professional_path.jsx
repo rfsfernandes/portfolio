@@ -13,6 +13,7 @@ import digitalworks from "../img/digitalworks.png";
 import aquashow from "../img/aquashow.png";
 import continent from "../img/continente.jpg";
 import eventphotography from "../img/eventphotography.png";
+import tekever from "../img/tekever.png";
 import Slide from "@material-ui/core/Slide";
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -65,6 +66,45 @@ function ProfessionalPath(props) {
                           <Paper elevation={3} className={classes.paper}>
                             <div className={classes.paperImg}>
                               <img
+                                src={tekever}
+                                alt=""
+                                width="100px"
+                                height="100px"
+                              />
+                            </div>
+                            <Typography
+                              align="center"
+                              variant="h6"
+                              component="h1"
+                            >
+                              {language == "EN"
+                                ? "Android Developer"
+                                : "Desenvolvedor Android"}
+                            </Typography>
+                            <Typography>
+                              {language == "EN"
+                                ? "Android Developer in the project Santander Empresas."
+                                : "Desenvolvedor Android no projeto Santander Empresas."}
+                            </Typography>
+                          </Paper>
+                          <TimelineContent>
+                            <Typography variant="body2" color="textSecondary">
+                              2021 - {language == "EN" ? "current" : "até ao momento"}
+                            </Typography>
+                          </TimelineContent>
+                        </TimelineContent>
+                      </TimelineItem>
+                      <TimelineItem>
+                        <TimelineSeparator>
+                          <TimelineDot
+                            className={classes.customDot}
+                          ></TimelineDot>
+                          <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                          <Paper elevation={3} className={classes.paper}>
+                            <div className={classes.paperImg}>
+                              <img
                                 src={digitalworks}
                                 alt=""
                                 width="100px"
@@ -88,8 +128,8 @@ function ProfessionalPath(props) {
                           </Paper>
                           <TimelineContent>
                             <Typography variant="body2" color="textSecondary">
-                              2020 -{" "}
-                              {language == "EN" ? "current" : "até ao momento"}
+                              2020 - 2021
+                            
                             </Typography>
                           </TimelineContent>
                         </TimelineContent>
