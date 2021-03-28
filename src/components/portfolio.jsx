@@ -328,20 +328,20 @@ class Portfolio extends React.Component {
                 description={descriptions.Covid2Day}
               />
               <PortfolioItem
-                directory="/img/fullstackchallenge/"
-                filename="fullstackchallenge"
-                title="Full Stack Challenge"
-                text="MongoDB | ExpressJS | ReactJS | NodeJS"
-                isExtended={false}
-                description={descriptions.FullStack}
-              />
-              <PortfolioItem
                 directory="/img/poket/"
                 filename="poket"
                 title="PoketDex"
                 text="Android | Java"
                 isExtended={true}
                 description={descriptions.PoketDex}
+              />
+              <PortfolioItem
+                directory="/img/fullstackchallenge/"
+                filename="fullstackchallenge"
+                title="Full Stack Challenge"
+                text="MongoDB | ExpressJS | ReactJS | NodeJS"
+                isExtended={false}
+                description={descriptions.FullStack}
               />
             </div>
           </div>
