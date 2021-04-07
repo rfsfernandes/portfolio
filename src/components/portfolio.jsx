@@ -268,7 +268,7 @@ const descriptionsPT = {
       </p>
       <p>
         Fazia parte do teste desenvolver a aplicação de forma a que fosse
-        possível utilizar tanto em moto retrato como em modo paisagem.
+        possível utilizar tanto em modo retrato como em modo paisagem.
       </p>
       <p>
         Tal como solicitado na documentação da 
