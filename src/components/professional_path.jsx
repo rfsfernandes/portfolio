@@ -55,6 +55,43 @@ function ProfessionalPath(props) {
                       </h5>
                     </div>
                     <Timeline align="alternate">
+                    <TimelineItem>
+                        <TimelineSeparator>
+                          <TimelineDot
+                            className={classes.customDot}
+                          ></TimelineDot>
+                          <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                          <Paper elevation={3} className={classes.paper}>
+                            <div className={classes.paperImg}>
+                              <img
+                                src={tekever}
+                                alt=""
+                                width="100px"
+                                height="100px"
+                              />
+                            </div>
+                            <Typography
+                              align="center"
+                              variant="h6"
+                              component="h1"
+                            >
+                              "Lead Android Developer"
+                            </Typography>
+                            <Typography>
+                              {language == "EN"
+                                ? "Android team leader. In charge of leading the development of a modular iGaming application on the Android platform, where I set priorities and distributed tasks among team members."
+                                : "Líder da equipa de Android. Encarregue de liderar o desenvolvimento de uma aplicação modular de iGaming na plataforma Android, onde defini prioridades e distribuí tarefas pelos membros da equipa"}
+                            </Typography>
+                          </Paper>
+                          <TimelineContent>
+                            <Typography variant="body2" color="textSecondary">
+                              2021 - {language == "EN" ? "current" : "até ao momento"}
+                            </Typography>
+                          </TimelineContent>
+                        </TimelineContent>
+                      </TimelineItem>
                       <TimelineItem>
                         <TimelineSeparator>
                           <TimelineDot
@@ -89,7 +126,7 @@ function ProfessionalPath(props) {
                           </Paper>
                           <TimelineContent>
                             <Typography variant="body2" color="textSecondary">
-                              2021 - {language == "EN" ? "current" : "até ao momento"}
+                              2021 - 2021
                             </Typography>
                           </TimelineContent>
                         </TimelineContent>

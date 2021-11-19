@@ -20,20 +20,20 @@ class SkillSet extends React.Component {
         {
           id: "Kotlin_skill",
           content: "Kotlin",
-          porcentage: "70%",
-          value: "70",
+          porcentage: "80%",
+          value: "80",
         },
         {
           id: "Flutter_skill",
           content: "Flutter",
-          porcentage: "70%",
-          value: "70",
+          porcentage: "75%",
+          value: "75",
         },
         {
           id: "Dart_skill",
           content: "Dart",
-          porcentage: "60%",
-          value: "60",
+          porcentage: "70%",
+          value: "70",
         },
         {
           id: "Csharp_skill",
