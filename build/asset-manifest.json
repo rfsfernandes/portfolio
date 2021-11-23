@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9c270628.chunk.css",
-    "main.js": "/portfolio/static/js/main.b9775f71.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.b9775f71.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.257c1d4a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.257c1d4a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/css/2.9f99e50b.chunk.css": "/portfolio/static/css/2.9f99e50b.chunk.css",
-    "static/js/2.e0eaab26.chunk.js": "/portfolio/static/js/2.e0eaab26.chunk.js",
-    "static/js/2.e0eaab26.chunk.js.map": "/portfolio/static/js/2.e0eaab26.chunk.js.map",
+    "static/js/2.a8661a9e.chunk.js": "/portfolio/static/js/2.a8661a9e.chunk.js",
+    "static/js/2.a8661a9e.chunk.js.map": "/portfolio/static/js/2.a8661a9e.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.73e8b3489707b68637048385c32e3cba.js": "/portfolio/precache-manifest.73e8b3489707b68637048385c32e3cba.js",
+    "precache-manifest.cdc1d8ad14f41c4094fb6faaabbcc9ea.js": "/portfolio/precache-manifest.cdc1d8ad14f41c4094fb6faaabbcc9ea.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.9f99e50b.chunk.css.map": "/portfolio/static/css/2.9f99e50b.chunk.css.map",
     "static/css/main.9c270628.chunk.css.map": "/portfolio/static/css/main.9c270628.chunk.css.map",
-    "static/js/2.e0eaab26.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e0eaab26.chunk.js.LICENSE.txt",
+    "static/js/2.a8661a9e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a8661a9e.chunk.js.LICENSE.txt",
     "static/js/pdf.worker.entry.4844c7bf.worker.js": "/portfolio/static/js/pdf.worker.entry.4844c7bf.worker.js",
     "static/js/pdf.worker.entry.4844c7bf.worker.js.LICENSE.txt": "/portfolio/static/js/pdf.worker.entry.4844c7bf.worker.js.LICENSE.txt",
     "static/js/pdf.worker.entry.4844c7bf.worker.js.map": "/portfolio/static/js/pdf.worker.entry.4844c7bf.worker.js.map",
@@ -22,6 +22,7 @@
     "static/media/earth-2.jpg": "/portfolio/static/media/earth-2.23e23ef2.jpg",
     "static/media/eventphotography.png": "/portfolio/static/media/eventphotography.653d0179.png",
     "static/media/font-awesome.css": "/portfolio/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/goma.png": "/portfolio/static/media/goma.c1834baa.png",
     "static/media/ionicons.css": "/portfolio/static/media/ionicons.621bd386.svg",
     "static/media/ipb.png": "/portfolio/static/media/ipb.20e64aec.png",
     "static/media/profile.png": "/portfolio/static/media/profile.3d3484b6.png",
@@ -30,8 +31,8 @@
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/css/2.9f99e50b.chunk.css",
-    "static/js/2.e0eaab26.chunk.js",
+    "static/js/2.a8661a9e.chunk.js",
     "static/css/main.9c270628.chunk.css",
-    "static/js/main.b9775f71.chunk.js"
+    "static/js/main.257c1d4a.chunk.js"
   ]
 }

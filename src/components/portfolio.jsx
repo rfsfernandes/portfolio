@@ -114,8 +114,7 @@ const descriptionsEN = {
         Android developer, requested by a company.
       </p>
       <p>
-        It was developed using the MVVM architecture and the API 
-        <a href="https://pokeapi.co/">PokéAPI</a>.
+        It was developed using the MVVM architecture and the API <a href="https://pokeapi.co/">PokéAPI</a>.
       </p>
       <p>
         The purpose of the application is to function as a Pokédex from the famous series
@@ -127,8 +126,7 @@ const descriptionsEN = {
         possible to use in both portrait and landscape mode.
       </p>
       <p>
-        As requested in the documentation of  
-        <a href="https://pokeapi.co/">PokéAPI</a>, I implemented a cache mechanism using Room in order to save some unnecessary API calls.
+        As requested in the documentation of <a href="https://pokeapi.co/">PokéAPI</a>, I implemented a cache mechanism using Room in order to save some unnecessary API calls.
       </p>
     </div>
   ),
@@ -139,6 +137,22 @@ const descriptionsEN = {
       </p>
       <p>
         Developed in C #, with 3D modeling performed within the Unity3D platform itself and with a SQLite database.
+      </p>
+    </div>
+  ),
+  LoopChallenge: (
+    <div>
+      <p>
+        Project developed for a company's technical challenge. The goal was to test my ability to create custom inputs, animations and layouts.
+      </p>
+      <p>
+        All the data is moked. Animations were made using MotionLayout and Material Design was used.
+      </p>
+      <p>
+        I ended up receiving an offer but it didn't cover my expenses of going to work overseas.
+      </p>
+      <p>
+        Developed using Kotlin. First project I've ever developed using Kotlin.
       </p>
     </div>
   )
@@ -258,8 +272,7 @@ const descriptionsPT = {
         capacidades enquanto desenvolvedor Android, a pedido de uma empresa.
       </p>
       <p>
-        Foi desenvolvida utilizando a arquitectura MVVM e a API 
-        <a href="https://pokeapi.co/">PokéAPI</a>.
+        Foi desenvolvida utilizando a arquitectura MVVM e a API <a href="https://pokeapi.co/">PokéAPI</a>.
       </p>
       <p>
         O objetivo da aplicação é funcionar como um Pokédex da famosa série
@@ -271,8 +284,7 @@ const descriptionsPT = {
         possível utilizar tanto em modo retrato como em modo paisagem.
       </p>
       <p>
-        Tal como solicitado na documentação da 
-        <a href="https://pokeapi.co/">PokéAPI</a>, foi implementado um mecanismo
+        Tal como solicitado na documentação da <a href="https://pokeapi.co/">PokéAPI</a>, foi implementado um mecanismo
         de cache utilizando o Room, de forma a prevenir chamadas desnecessárias.
       </p>
     </div>
@@ -284,6 +296,22 @@ const descriptionsPT = {
       </p>
       <p>
         Desenvolvido em C#, com modelação 3D realizada dentro da própria plataforma do Unity3D e com uma base de dados em SQLite.
+      </p>
+    </div>
+  ),
+  LoopChallenge: (
+    <div>
+      <p>
+        Projecto desenvolvido para um desafio técnico de um processo de recrutamento. O objetivo era testar a minha capacidade de criar inputs, animações e layouts custom.
+      </p>
+      <p>
+        Todos os dados são locais. As animações fois feitas utilizando MotionLayout e foi utilizado o Material Design.
+      </p>
+      <p>
+        Obtive uma proposta mas não cobria as despesas de ir trabalhar para o estrangeiro.
+      </p>
+      <p>
+        Desenvolvido em Kotlin. Primeiro projeto que alguma vez realizei utilizando Kotlin.
       </p>
     </div>
   )
@@ -315,6 +343,24 @@ class Portfolio extends React.Component {
               </div>
             </div>
             <div className="row">
+            <PortfolioItem
+                directory="/img/loop_challenge/"
+                filename="loop"
+                title="UI & UX Challenge"
+                text="Kotlin | Java"
+                isExtended={false}
+                description={descriptions.LoopChallenge}
+                repository="https://github.com/rfsfernandes/android-kotlin-animations"
+              />
+              <PortfolioItem
+                directory="/img/poket/"
+                filename="poket"
+                title="PoketDex"
+                text="Android | Java"
+                isExtended={true}
+                description={descriptions.PoketDex}
+                repository="https://github.com/rfsfernandes/poketdex"
+              />
               <PortfolioItem
                 directory="/img/icnf/"
                 filename="icnf"
@@ -322,6 +368,7 @@ class Portfolio extends React.Component {
                 text="Android | Java"
                 isExtended={true}
                 description={descriptions.NaturalPTrails}
+                repository={null}
               />
               <PortfolioItem
                 directory="/img/myticket/"
@@ -330,6 +377,16 @@ class Portfolio extends React.Component {
                 text="Android | Java"
                 isExtended={false}
                 description={descriptions.Myticket}
+                repository={null}
+              />
+              <PortfolioItem
+                directory="/img/covid2day/"
+                filename="covid2day"
+                title="Covid2Day"
+                text="Android | Java"
+                isExtended={true}
+                description={descriptions.Covid2Day}
+                repository="https://github.com/rfsfernandes/covid2day/tree/development"
               />
               <PortfolioItem
                 directory="/img/pescapanha/"
@@ -340,20 +397,13 @@ class Portfolio extends React.Component {
                 description={descriptions.PescApanha}
               />
               <PortfolioItem
-                directory="/img/covid2day/"
-                filename="covid2day"
-                title="Covid2Day"
-                text="Android | Java"
-                isExtended={true}
-                description={descriptions.Covid2Day}
-              />
-              <PortfolioItem
                 directory="/img/fullstackchallenge/"
                 filename="fullstackchallenge"
                 title="Full Stack Challenge"
                 text="MongoDB | ExpressJS | ReactJS | NodeJS"
                 isExtended={false}
                 description={descriptions.FullStack}
+                repository="https://github.com/rfsfernandes/fullstackchallenge"
               />
               <PortfolioItem
                 directory="/img/ecoescolas/"
@@ -362,14 +412,7 @@ class Portfolio extends React.Component {
                 text="Unity3D | C# | SQLite"
                 isExtended={true}
                 description={descriptions.EcoEscolas}
-              />
-              <PortfolioItem
-                directory="/img/poket/"
-                filename="poket"
-                title="PoketDex"
-                text="Android | Java"
-                isExtended={true}
-                description={descriptions.PoketDex}
+                repository="https://github.com/rfsfernandes/estig_escola_sustentavel"
               />
             </div>
           </div>

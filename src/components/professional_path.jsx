@@ -14,6 +14,7 @@ import aquashow from "../img/aquashow.png";
 import continent from "../img/continente.jpg";
 import eventphotography from "../img/eventphotography.png";
 import tekever from "../img/tekever.png";
+import goma from "../img/goma.png";
 import Slide from "@material-ui/core/Slide";
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -66,7 +67,7 @@ function ProfessionalPath(props) {
                           <Paper elevation={3} className={classes.paper}>
                             <div className={classes.paperImg}>
                               <img
-                                src={tekever}
+                                src={goma}
                                 alt=""
                                 width="100px"
                                 height="100px"
@@ -77,7 +78,7 @@ function ProfessionalPath(props) {
                               variant="h6"
                               component="h1"
                             >
-                              "Lead Android Developer"
+                              Lead Android Developer
                             </Typography>
                             <Typography>
                               {language == "EN"
@@ -160,7 +161,7 @@ function ProfessionalPath(props) {
                             <Typography>
                               {language == "EN"
                                 ? "Once I finished my trainee internship, I became a Junior Android Developer in the same company I did all the internships."
-                                : "Assim que terminei meu estágio curricular, tornei-me Desenvolvedor Android Júnior na mesma empresa em que fiz todos os estágios anterior."}
+                                : "Assim que terminei meu estágio curricular, tornei-me Desenvolvedor Android Júnior na mesma empresa em que fiz todos os estágios anteriores."}
                             </Typography>
                           </Paper>
                           <TimelineContent>
