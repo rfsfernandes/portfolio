@@ -19,7 +19,7 @@ function CV(props) {
   };
 
   return (
-    <Slide in {...{ timeout: 5000 }}>
+    <Slide in {...{ timeout: 4500 }}>
       <section id="curriculum" className="about-mf sect-pt4 route">
         <div className="container">
           <div className="row">

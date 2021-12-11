@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
   paperImg: {
     textAlign: "center",
   },
+  imgTag: {
+    borderRadius: "10%"
+  }
 }));
 
 function ProfessionalPath(props) {
@@ -39,7 +42,7 @@ function ProfessionalPath(props) {
   const classes = useStyles();
   return (
     <div>
-      <Slide in {...{ timeout: 3500 }}>
+      <Slide in {...{ timeout: 2500 }}>
         <section id="about" className="about-mf sect-pt4 route">
           <div className="container">
             <div className="row">
@@ -67,6 +70,7 @@ function ProfessionalPath(props) {
                           <Paper elevation={3} className={classes.paper}>
                             <div className={classes.paperImg}>
                               <img
+                                className={classes.imgTag}
                                 src={goma}
                                 alt=""
                                 width="100px"
@@ -83,12 +87,12 @@ function ProfessionalPath(props) {
                             <Typography>
                               {language == "EN"
                                 ? "Android team leader. In charge of leading the development of a modular iGaming application on the Android platform, where I set priorities and distributed tasks among team members."
-                                : "Líder da equipa de Android. Encarregue de liderar o desenvolvimento de uma aplicação modular de iGaming na plataforma Android, onde defini prioridades e distribuí tarefas pelos membros da equipa"}
+                                : "Líder da equipa de Android. Encarregue de liderar o desenvolvimento de uma aplicação modular de iGaming na plataforma Android, onde defini prioridades e distribuo tarefas pelos membros da equipa"}
                             </Typography>
                           </Paper>
                           <TimelineContent>
                             <Typography variant="body2" color="textSecondary">
-                              2021 - {language == "EN" ? "current" : "até ao momento"}
+                              {language == "EN" ? "August 2021 - current" : "Agosto 2021 - até ao momento"}
                             </Typography>
                           </TimelineContent>
                         </TimelineContent>
@@ -104,6 +108,7 @@ function ProfessionalPath(props) {
                           <Paper elevation={3} className={classes.paper}>
                             <div className={classes.paperImg}>
                               <img
+                                className={classes.imgTag}
                                 src={tekever}
                                 alt=""
                                 width="100px"
@@ -127,7 +132,9 @@ function ProfessionalPath(props) {
                           </Paper>
                           <TimelineContent>
                             <Typography variant="body2" color="textSecondary">
-                              2021 - 2021
+                            {language == "EN"
+                                ? "March 2021 - August 2021"
+                                : "Março 2021 - Agosto 2021"}
                             </Typography>
                           </TimelineContent>
                         </TimelineContent>
@@ -143,6 +150,7 @@ function ProfessionalPath(props) {
                           <Paper elevation={3} className={classes.paper}>
                             <div className={classes.paperImg}>
                               <img
+                                className={classes.imgTag}
                                 src={digitalworks}
                                 alt=""
                                 width="100px"
@@ -160,209 +168,15 @@ function ProfessionalPath(props) {
                             </Typography>
                             <Typography>
                               {language == "EN"
-                                ? "Once I finished my trainee internship, I became a Junior Android Developer in the same company I did all the internships."
-                                : "Assim que terminei meu estágio curricular, tornei-me Desenvolvedor Android Júnior na mesma empresa em que fiz todos os estágios anteriores."}
+                                ? "I started my journey here. I did two internships and later signed a contract. During these two years I was responsible for the Company's Android development."
+                                : "Comecei a minha jornada aqui. Realizei dois estágios e mais tarde assinei contrato. Durante esses dois anos fui responsável pelo desenvolvimento Android da Empresa."}
                             </Typography>
                           </Paper>
                           <TimelineContent>
                             <Typography variant="body2" color="textSecondary">
-                              2020 - 2021
-                            
-                            </Typography>
-                          </TimelineContent>
-                        </TimelineContent>
-                      </TimelineItem>
-                      <TimelineItem>
-                        <TimelineSeparator>
-                          <TimelineDot
-                            className={classes.customDot}
-                          ></TimelineDot>
-                          <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                          <Paper elevation={3} className={classes.paper}>
-                            <div className={classes.paperImg}>
-                              <img
-                                src={digitalworks}
-                                alt=""
-                                width="100px"
-                                height="100px"
-                              />
-                            </div>
-                            <Typography
-                              align="center"
-                              variant="h6"
-                              component="h1"
-                            >
                               {language == "EN"
-                                ? "Professional Internship - Android Developer"
-                                : "Estágio Profissional - Desenvolvedor Android"}
-                            </Typography>
-                            <Typography>
-                              {language == "EN"
-                                ? "As I finished my University course, I began a trainee internship as Android Developer in the same company I did my internship."
-                                : "Ao terminar o meu curso universitário, iniciei um estágio profissional como Desenvolvedor Android na mesma empresa em que fiz meu estágio curricular."}
-                            </Typography>
-                          </Paper>
-                          <TimelineContent>
-                            <Typography variant="body2" color="textSecondary">
-                              2019 - 2020
-                            </Typography>
-                          </TimelineContent>
-                        </TimelineContent>
-                      </TimelineItem>
-                      <TimelineItem>
-                        <TimelineSeparator>
-                          <TimelineDot
-                            className={classes.customDot}
-                          ></TimelineDot>
-                          <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                          <Paper elevation={3} className={classes.paper}>
-                            <div className={classes.paperImg}>
-                              <img
-                                src={digitalworks}
-                                alt=""
-                                width="100px"
-                                height="100px"
-                              />
-                            </div>
-                            <Typography
-                              align="center"
-                              variant="h6"
-                              component="h1"
-                            >
-                              {language == "EN"
-                                ? "Curricular Internship - Android Developer"
-                                : "Estágio Curricular - Desenvolvedor Android"}
-                            </Typography>
-                            <Typography>
-                              {language == "EN"
-                                ? "In order to finish my University course, I needed to make an internship. I chose to make an internship as an Android Developer at Digital Workd."
-                                : "Para terminar meu CTeSP, precisei de fazer um estágio curricular. Optei por fazer um estágio como Desenvolvedor Android, na Digital Works."}
-                            </Typography>
-                          </Paper>
-                          <TimelineContent>
-                            <Typography variant="body2" color="textSecondary">
-                              2019
-                            </Typography>
-                          </TimelineContent>
-                        </TimelineContent>
-                      </TimelineItem>
-                      <TimelineItem>
-                        <TimelineSeparator>
-                          <TimelineDot
-                            className={classes.customDot}
-                          ></TimelineDot>
-                          <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                          <Paper elevation={3} className={classes.paper}>
-                            <div className={classes.paperImg}>
-                              <img
-                                src={continent}
-                                alt=""
-                                width="100px"
-                                height="100px"
-                              />
-                            </div>
-                            <Typography
-                              align="center"
-                              variant="h6"
-                              component="h1"
-                            >
-                              {language == "EN"
-                                ? "Supermarket Product Repositor"
-                                : "Repositor de Supermercado"}
-                            </Typography>
-                            <Typography>
-                              {language == "eN"
-                                ? "Worked as a product repositor for 6 months at Continente. I was also studying at the sametime."
-                                : "Trabalhei como repositor de produtos durante 6 meses no Continente. Trabalhava e estudava ao mesmo tempo."}
-                            </Typography>
-                          </Paper>
-                          <TimelineContent>
-                            <Typography variant="body2" color="textSecondary">
-                              2018
-                            </Typography>
-                          </TimelineContent>
-                        </TimelineContent>
-                      </TimelineItem>
-                      <TimelineItem>
-                        <TimelineSeparator>
-                          <TimelineDot
-                            className={classes.customDot}
-                          ></TimelineDot>
-                          <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                          <Paper elevation={3} className={classes.paper}>
-                            <div className={classes.paperImg}>
-                              <img
-                                src={aquashow}
-                                alt=""
-                                width="100px"
-                                height="100px"
-                              />
-                            </div>
-                            <Typography
-                              align="center"
-                              variant="h6"
-                              component="h1"
-                            >
-                              {language == "EN"
-                                ? "Restaurant Employee At Water Themed Park"
-                                : "Empregado de Restaurante Num Parque Aquático"}
-                            </Typography>
-                            <Typography>
-                              {language == "EN"
-                                ? "Worked at a Water Themed Park, called Aquashow, as cook and also as barista."
-                                : "Trabalhei num Parque Temático Aquático, denominado Aquashow, como cozinheiro e também como barista."}
-                            </Typography>
-                          </Paper>
-                          <TimelineContent>
-                            <Typography variant="body2" color="textSecondary">
-                              2016
-                            </Typography>
-                          </TimelineContent>
-                        </TimelineContent>
-                      </TimelineItem>
-                      <TimelineItem>
-                        <TimelineSeparator>
-                          <TimelineDot
-                            className={classes.customDot}
-                          ></TimelineDot>
-                          <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                          <Paper elevation={3} className={classes.paper}>
-                            <div className={classes.paperImg}>
-                              <img
-                                src={eventphotography}
-                                alt=""
-                                width="100px"
-                                style={{ backgroundColor: "white" }}
-                              />
-                            </div>
-                            <Typography
-                              align="center"
-                              variant="h6"
-                              component="h1"
-                            >
-                              {language == "EN"
-                                ? "Events Photographer"
-                                : "Fotógrafo de Eventos"}
-                            </Typography>
-                            <Typography>
-                              {language == "EN"
-                                ? "Worked as an event photographer at some parties made by local students."
-                                : "Trabalhei como fotógrafo de eventos em algumas festas realizadas por estudantes locais."}
-                            </Typography>
-                          </Paper>
-                          <TimelineContent>
-                            <Typography variant="body2" color="textSecondary">
-                              2015 - 2017
+                                ? "February 2019 - March 2021"
+                                : "Fevereiro 2019 - Março 2021"}
                             </Typography>
                           </TimelineContent>
                         </TimelineContent>

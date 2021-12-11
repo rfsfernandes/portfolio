@@ -88,7 +88,7 @@ class SkillSet extends React.Component {
     const { language } = this.props;
     return (
       <section id="about" className="about-mf sect-pt4 route">
-        <Slide in {...{ timeout: 2500 }}>
+        <Slide in {...{ timeout: 5000 }}>
           <div className="container">
             <div className="row">
               <div className="col-sm-12">

@@ -55,56 +55,62 @@ class About extends React.Component {
         {
           id: "first-p-about",
           content:
-            "I consider myself a very professional and organized person. I like to keep my desk organized and clean, so there is no distraction possible. Therefore, so are my code and my projects. This way I can more easily follow what I am developing.",
+            "Since I saw an Android phone for the first time and I really realized what an Android Application was, the bug of wanting to become a Software Developer was born," + 
+            "with more emphasis on Mobile Devices. Nothing fascinates me more than writing a few lines of code and watching everything happen on my mobile phone.",
         },
         {
           id: "second-p-about",
           content:
-            "I like to maintain consistency, so all my current projects always follow the same template, in terms of structure, created by me. In addition to this, I always try to be as efficient as possible, so I became very proficient on my time management.",
+            "To me, a Software Developer is someone who will never be able to say that he knows everything, it is a profession in which the" + 
+            "professional must be in constant learning and must have the humility to accept mistakes and learn from them, whether from someone with more or less experience.",
         },
         {
           id: "third-p-about",
           content:
-            "Throughout my academic and professional I managed to improve and perfect my teamwork , because without a team everything is much more boring and much more difficult. Teamwork is fundamental and a priority. I always try to help my teammates, just as I" +
-            " also ask for help when I have more difficulties. The entire development process has to be carried out with enormous mutual assistance between the team members.",
+            "I am very demanding with results and very perfectionist. This also translates into my professional life.",
         },
         {
           id: "fourth-p-about",
           content:
-            "As a very dedicated person and committed to everything I do, I am also perfectionist and demanding with myself. I consider myself an endless learner: I love learning and I will always be learning. That's the life of a programmer, right? You never stop learning. And if you do... it's the end!",
+            "In the development of any software there is something very important: the team. As a team member, whether you are the leader or not, it is important to help other" + 
+            "team members and ask for help when we feel trapped. We are all rowing to the same side, no one is left behind because it would make a part of the application more fragile.",
         },
         {
           id: "five-p-about",
           content:
-            "I have a very objective attitude, which leads me to solve problems relatively quickly and focus on priorities. I have always liked challenges and, therefore, I have developed a good problem-solving capacity, be they professional or personal.",
+            "I really like challenges. I have a very objective attitude, which leads me to solve problems quickly and effectively, focusing on what's the most important.",
         },
       ],
       about_mePT:[
         {
           id: "first-p-about",
           content:
-            "Considero-me uma pessoa bastante profissional e organizada. Gosto de manter a minha mesa de trabalho organizada e limpa, para que não haja nenhuma distração. Por conseguinte, o meu código e os meus projetos também o são, desta forma consigo seguir mais facilmente o que estou a desenvolver.",
+            "Desde que vi pela primeira vez um telemóvel Android e que me apercebi realmente o que era uma Aplicação Android," +
+            "nasceu o bichinho de me querer tornar um Software Developer, com mais ênfase em Dispositivos Móveis."+
+            "Nada me fascina mais do que escrever umas linhas de código e ver tudo a acontecer no telemóvel.",
         },
         {
           id: "second-p-about",
           content:
-            "Gosto de manter consistência, pelo que todos os meus projetos atuais seguem sempre o mesmo template, em termos de estrutura, criado por mim. Para além disto, tento ser sempre o mais eficiente possível, pelo que consigo ter uma boa gestão do tempo.",
+            "Para mim um Software Developer é alguém que nunca poderá dizer que sabe tudo, é uma profissão em que o profissional" + 
+            "tem de estar em constante aprendizagem e tem de ter a humildade de aceitar os erros e aprender com eles, seja de alguém com mais ou menos experiência.",
         },
         {
           id: "third-p-about",
           content:
-            "Tenho melhorado e aperfeiçoado o meu trabalho em equipa ao longo da minha vida académica e profissional, pois sem uma equipa tudo é mais chato e muito mais difícil. O trabalho de equipa é fundamental e é uma prioridade. Tento sempre ajudar os meus colegas de equipa, tal como também lhes peço ajuda quando sinto mais dificuldades. Todo o processo de desenvolvimento tem de ser realizado com uma enorme entreajuda entre os elementos da equipa.",
+            "Sou bastante exigente com resultados e bastante perfeccionista. Isso também se traduz na minha vida profissional",
         },
         {
           id: "fourth-p-about",
           content:
-            "Sou uma pessoa muito dedicada e empenhada em tudo o que faço. Sou perfecionista e exigente comigo mesmo. " +
-            "Considero-me um aprendiz sem vim: adoro aprender e estarei sempre a aprender. É essa a vida de um programador, certo? Nunca se para de aprender. E se o fizer... É o fim!"
+          "No desenvolvimento de qualquer software existe algo bastante importante: a equipa.  Enquanto membro da equipa, seja o líder ou não," + 
+          "é importante ajudar os restantes membros e pedir ajuda quando nos sentimos encurralados. Estamos todos a remar para o mesmo lado, ninguém fica" + 
+          "para trás porque tornaria uma parte da aplicação mais frágil."
         },
         {
           id: "five-p-about",
           content:
-            "Consigo ter uma atitude bastante objetiva, o que me leva a resolver problemas de forma relativamente rápida e focar-me nas prioridades. Sempre gostei de desafios e, por isso, desenvolvi uma boa capacidade de resolução de problemas, sejam eles profissionais ou pessoais.",
+            "Gosto bastante de desafios, tenho uma atitude bastante objetiva, o que me leva a resolver problemas de forma rápida e eficaz, focando-me no mais importante.",
         },
       ]
     };

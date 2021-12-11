@@ -46,7 +46,18 @@ class Intro extends React.Component {
                       href="#work"
                       role="button"
                     >
-                      {language == "EN" ? "View My Work" : "Ver o Meu Trabalho"}
+                      {language == "EN"
+                        ? "Check My Work"
+                        : "Ver o Meu Trabalho"}
+                    </a>{" "}
+                    Or
+                    {"   "}
+                    <a
+                      className="btn btn-primary js-scroll px-4"
+                      href="#curriculum"
+                      role="button"
+                    >
+                      {language == "EN" ? "Check My CV" : "Ver o Meu CV"}
                     </a>
                   </p>
                 </div>

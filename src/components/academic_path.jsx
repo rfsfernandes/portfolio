@@ -28,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
   paperImg: {
     textAlign: "center",
   },
+  imgTag: {
+    borderRadius: "10%"
+  }
 }));
 
 function AcedemicPath(props) {
@@ -63,6 +66,7 @@ function AcedemicPath(props) {
                           <Paper elevation={3} className={classes.paper}>
                             <div className={classes.paperImg}>
                               <img
+                                className={classes.imgTag}
                                 src={ipb}
                                 alt=""
                                 width="100px"
@@ -86,8 +90,8 @@ function AcedemicPath(props) {
                           </Paper>
                           <TimelineContent>
                             <Typography variant="body2" color="textSecondary">
-                              2019 -{" "}
-                              {language == "EN" ? "Current" : "A decorrer"}
+                              2019 -
+                              {language == "EN" ? " Currently on hold" : " Atualmente em pausa"}
                             </Typography>
                           </TimelineContent>
                         </TimelineContent>
@@ -103,84 +107,7 @@ function AcedemicPath(props) {
                           <Paper elevation={3} className={classes.paper}>
                             <div className={classes.paperImg}>
                               <img
-                                src={udemy}
-                                alt=""
-                                width="100px"
-                                height="100px"
-                              />
-                            </div>
-                            <Typography
-                              align="center"
-                              variant="h6"
-                              component="h1"
-                            >
-                              {language == "EN"
-                                ? "The Complete 2020 Web Development Bootcamp"
-                                : "Bootcamp completo de Desenvolvimento Web de 2020"}
-                            </Typography>
-                            <Typography>
-                              {language == "EN"
-                                ? "A 54h Fullstack bootcamp from Udemy, instructed by Angela Yu, one of the bests instructors. I learned about MongoDB, ExpressJS, ReactJS and NodeJS."
-                                : "Um bootcamp Fullstack de 54h da Udemy, instruído pela Angela Yu, uma das melhores instrutoras da plataforma. Aprendi MongoDB, ExpressJS, ReactJS e NodeJS."}
-                            </Typography>
-                          </Paper>
-                          <TimelineContent>
-                            <Typography variant="body2" color="textSecondary">
-                              2020
-                            </Typography>
-                          </TimelineContent>
-                        </TimelineContent>
-                      </TimelineItem>
-                      <TimelineItem>
-                        <TimelineSeparator>
-                          <TimelineDot
-                            className={classes.customDot}
-                          ></TimelineDot>
-                          <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                          <Paper elevation={3} className={classes.paper}>
-                            <div className={classes.paperImg}>
-                              <img
-                                src={udemy}
-                                alt=""
-                                width="100px"
-                                height="100px"
-                              />
-                            </div>
-                            <Typography
-                              align="center"
-                              variant="h6"
-                              component="h1"
-                            >
-                              {language == "EN"
-                                ? "The Complete App Design Course - UX, UI and Design Thinking"
-                                : "Curso Completo de Design de Aplicações - UX, UI e Pensamento de Design"}
-                            </Typography>
-                            <Typography>
-                              {language == "EN"
-                                ? "A course where I learned about UI, UX and Design, at Udemy with the instructor Angela Yu. Since it was one of my weaknesses, I took this course in order to improve myself and to open my mind a bit more."
-                                : "Um curso onde aprendi sobre UI, UX e Design, na Udemy com a instrutora Angela Yu. Por ser um dos meus pontos fracos, fiz este curso com o objetivo de melhorar essa minha fraquesa e abrir um pouco mais a minha mente."}
-                            </Typography>
-                          </Paper>
-                          <TimelineContent>
-                            <Typography variant="body2" color="textSecondary">
-                              2020
-                            </Typography>
-                          </TimelineContent>
-                        </TimelineContent>
-                      </TimelineItem>
-                      <TimelineItem>
-                        <TimelineSeparator>
-                          <TimelineDot
-                            className={classes.customDot}
-                          ></TimelineDot>
-                          <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>
-                          <Paper elevation={3} className={classes.paper}>
-                            <div className={classes.paperImg}>
-                              <img
+                                className={classes.imgTag}
                                 src={ipb}
                                 alt=""
                                 width="100px"
@@ -193,7 +120,7 @@ function AcedemicPath(props) {
                               component="h1"
                             >
                               {language == "EN"
-                                ? "Professional Technical Course - Web Technologies and Mobile Devices"
+                                ? "Associate Degree - Web Technologies and Mobile Devices"
                                 : "Curso Técnico Superior Profissional - Tecnologias Web e Dispositivos Móveis"}
                             </Typography>
                             <Typography>
