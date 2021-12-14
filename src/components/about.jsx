@@ -55,13 +55,13 @@ class About extends React.Component {
         {
           id: "first-p-about",
           content:
-            "Since I saw an Android phone for the first time and I really realized what an Android Application was, the bug of wanting to become a Software Developer was born," + 
+            "Since I saw an Android phone for the first time and I really realized what an Android Application was, the bug of wanting to become a Software Developer was born, " + 
             "with more emphasis on Mobile Devices. Nothing fascinates me more than writing a few lines of code and watching everything happen on my mobile phone.",
         },
         {
           id: "second-p-about",
           content:
-            "To me, a Software Developer is someone who will never be able to say that he knows everything, it is a profession in which the" + 
+            "To me, a Software Developer is someone who will never be able to say that he knows everything, it is a profession in which the " + 
             "professional must be in constant learning and must have the humility to accept mistakes and learn from them, whether from someone with more or less experience.",
         },
         {
@@ -72,7 +72,7 @@ class About extends React.Component {
         {
           id: "fourth-p-about",
           content:
-            "In the development of any software there is something very important: the team. As a team member, whether you are the leader or not, it is important to help other" + 
+            "In the development of any software there is something very important: the team. As a team member, whether you are the leader or not, it is important to help other " + 
             "team members and ask for help when we feel trapped. We are all rowing to the same side, no one is left behind because it would make a part of the application more fragile.",
         },
         {
@@ -86,25 +86,25 @@ class About extends React.Component {
           id: "first-p-about",
           content:
             "Desde que vi pela primeira vez um telemóvel Android e que me apercebi realmente o que era uma Aplicação Android," +
-            "nasceu o bichinho de me querer tornar um Software Developer, com mais ênfase em Dispositivos Móveis."+
+            " nasceu o bichinho de me querer tornar um Software Developer, com mais ênfase em Dispositivos Móveis. "+
             "Nada me fascina mais do que escrever umas linhas de código e ver tudo a acontecer no telemóvel.",
         },
         {
           id: "second-p-about",
           content:
-            "Para mim um Software Developer é alguém que nunca poderá dizer que sabe tudo, é uma profissão em que o profissional" + 
+            "Para mim um Software Developer é alguém que nunca poderá dizer que sabe tudo, é uma profissão em que o profissional " + 
             "tem de estar em constante aprendizagem e tem de ter a humildade de aceitar os erros e aprender com eles, seja de alguém com mais ou menos experiência.",
         },
         {
           id: "third-p-about",
           content:
-            "Sou bastante exigente com resultados e bastante perfeccionista. Isso também se traduz na minha vida profissional",
+            "Sou bastante exigente com resultados e bastante perfeccionista. Isso também se traduz na minha vida profissional.",
         },
         {
           id: "fourth-p-about",
           content:
-          "No desenvolvimento de qualquer software existe algo bastante importante: a equipa.  Enquanto membro da equipa, seja o líder ou não," + 
-          "é importante ajudar os restantes membros e pedir ajuda quando nos sentimos encurralados. Estamos todos a remar para o mesmo lado, ninguém fica" + 
+          "No desenvolvimento de qualquer software existe algo bastante importante: a equipa.  Enquanto membro da equipa, seja o líder ou não, " + 
+          "é importante ajudar os restantes membros e pedir ajuda quando nos sentimos encurralados. Estamos todos a remar para o mesmo lado, ninguém fica " + 
           "para trás porque tornaria uma parte da aplicação mais frágil."
         },
         {

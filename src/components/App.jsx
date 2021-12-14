@@ -16,7 +16,7 @@ import OnlineCourses from "./online_courses.jsx";
 function App() {
   let decodedCookie = decodeURIComponent(document.cookie);
   let ca = decodedCookie.split(";");
-  let languageCookie = "PT";
+  let languageCookie = "EN";
 
   ca.forEach((cookie) => {
     if (cookie.includes("language")) {
