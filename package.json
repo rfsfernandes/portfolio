@@ -14,7 +14,6 @@
     "lightbox2": "^2.11.0",
     "list-files": "^1.1.4",
     "list-react-files": "^0.2.0",
-    "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.15.0",
     "react": "^16.8.6",
@@ -24,6 +23,7 @@
     "react-pdf": "^5.0.0",
     "react-scripts": "^3.4.4",
     "react-typed": "^1.1.2",
+    "sass": "^1.56.0",
     "save-dev": "0.0.1-security",
     "simple-react-lightbox": "^3.3.4-2",
     "typed.js": "^2.0.10"
