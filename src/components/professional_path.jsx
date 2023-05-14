@@ -10,9 +10,7 @@ import TimelineDot from "@material-ui/lab/TimelineDot";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import digitalworks from "../img/digitalworks.png";
-import aquashow from "../img/aquashow.png";
-import continent from "../img/continente.jpg";
-import eventphotography from "../img/eventphotography.png";
+import af_img from "../img/af.png"
 import tekever from "../img/tekever.png";
 import goma from "../img/goma.png";
 import Slide from "@material-ui/core/Slide";
@@ -66,6 +64,48 @@ function ProfessionalPath(props) {
                           ></TimelineDot>
                           <TimelineConnector />
                         </TimelineSeparator>
+                        <TimelineItem>
+                        <TimelineSeparator>
+                          <TimelineDot
+                            className={classes.customDot}
+                          ></TimelineDot>
+                          <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>
+                          <Paper elevation={3} className={classes.paper}>
+                            <div className={classes.paperImg}>
+                              <img
+                                className={classes.imgTag}
+                                src={af_img}
+                                alt=""
+                                width="100px"
+                                height="100px"
+                              />
+                            </div>
+                            <Typography
+                              align="center"
+                              variant="h6"
+                              component="h1"
+                            >
+                              {language == "EN"
+                                ? "Android Developer"
+                                : "Desenvolvedor Android"}
+                            </Typography>
+                            <Typography>
+                              {language == "EN"
+                                ? "Android Developer in the project BMW HMI. In charge of vehicle functions."
+                                : "Desenvolvedor Android no projeto BMW HMI. Encarregue das Funções do Veículo."}
+                            </Typography>
+                          </Paper>
+                          <TimelineContent>
+                            <Typography variant="body2" color="textSecondary">
+                            {language == "EN"
+                                ? "March 2022 - Present"
+                                : "Março 2022 - Presente"}
+                            </Typography>
+                          </TimelineContent>
+                        </TimelineContent>
+                      </TimelineItem>
                         <TimelineContent>
                           <Paper elevation={3} className={classes.paper}>
                             <div className={classes.paperImg}>
@@ -92,7 +132,7 @@ function ProfessionalPath(props) {
                           </Paper>
                           <TimelineContent>
                             <Typography variant="body2" color="textSecondary">
-                              {language == "EN" ? "August 2021 - current" : "Agosto 2021 - até ao momento"}
+                              {language == "EN" ? "August 2021 - March 2022" : "Agosto 2021 - Março 2022"}
                             </Typography>
                           </TimelineContent>
                         </TimelineContent>
