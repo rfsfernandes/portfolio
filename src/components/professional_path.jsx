@@ -10,7 +10,7 @@ import TimelineDot from "@material-ui/lab/TimelineDot";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import digitalworks from "../img/digitalworks.png";
-import af_img from "../img/af.png"
+import af_img from "../img/af.png";
 import tekever from "../img/tekever.png";
 import goma from "../img/goma.png";
 import Slide from "@material-ui/core/Slide";
@@ -64,13 +64,6 @@ function ProfessionalPath(props) {
                           ></TimelineDot>
                           <TimelineConnector />
                         </TimelineSeparator>
-                        <TimelineItem>
-                        <TimelineSeparator>
-                          <TimelineDot
-                            className={classes.customDot}
-                          ></TimelineDot>
-                          <TimelineConnector />
-                        </TimelineSeparator>
                         <TimelineContent>
                           <Paper elevation={3} className={classes.paper}>
                             <div className={classes.paperImg}>
@@ -106,6 +99,13 @@ function ProfessionalPath(props) {
                           </TimelineContent>
                         </TimelineContent>
                       </TimelineItem>
+                      <TimelineItem>
+                        <TimelineSeparator>
+                          <TimelineDot
+                            className={classes.customDot}
+                          ></TimelineDot>
+                          <TimelineConnector />
+                        </TimelineSeparator>
                         <TimelineContent>
                           <Paper elevation={3} className={classes.paper}>
                             <div className={classes.paperImg}>
@@ -132,7 +132,7 @@ function ProfessionalPath(props) {
                           </Paper>
                           <TimelineContent>
                             <Typography variant="body2" color="textSecondary">
-                              {language == "EN" ? "August 2021 - March 2022" : "Agosto 2021 - Março 2022"}
+                              {language == "EN" ? "August 2021 - current" : "Agosto 2021 - até ao momento"}
                             </Typography>
                           </TimelineContent>
                         </TimelineContent>
